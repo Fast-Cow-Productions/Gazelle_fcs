@@ -1,0 +1,15 @@
+{
+  "dependencies": [],
+  "content_type": "AIRCRAFT",
+  "title": "Gazelle Aircraft",
+  "manufacturer": "Aerospatiale",
+  "creator": "Fast Cow Productions",
+  "package_version": "3.1.10",
+  "minimum_game_version": "1.30.12",
+  "release_notes": {
+    "neutral": {
+      "LastUpdate": "",
+      "OlderHistory": ""
+    }
+  }
+}

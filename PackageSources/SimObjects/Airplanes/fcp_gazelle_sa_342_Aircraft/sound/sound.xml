@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Nemeth Designs -->
+
+<SoundInfo Version="Microsoft Flight Simulator 1.0">
+
+	<WwisePackages>
+		<MainPackage Name="NemethDesigns_B407"/>
+		
+	</WwisePackages>
+	
+<!-- AQOUSTIC PARAMETERS #################################################################################### --> 
+ 
+  <AcousticParameters>
+      <Parameter Name="ReverberationPreset" ShareSetInside="rev_inside_bell407"/>
+      <Parameter Name="Insulation_ExitClosed" Value="-12"/> <!-- Sounds comming from outside will be attenuate by X dB in the cockpit, if exit doors are closed -->
+	  <Parameter Name="Insulation_ExitOpen" Value="0"/> <!-- Sounds comming from outside will be attenuate by X dB in the cockpit, if exit doors are open -->
+  </AcousticParameters>
+	<!--These parameters allow to customize special sharesets for inside/outside bus. Shareset will be apply at runtime on 'customs auxiliary bus'. 
+	The attributes for the sharesets are 'ShareSetInside' and 'ShareSetOutside' parameter.-->
+  
+<!-- ALWAYS PLAYSOUNDS ========================================================================================== -->
+<!-- These sounds play at all times and thus do not require any parameter to set up how and when they are triggered. Parametering is possible. -->
+	
+  <AlwaysPlaySounds>
+
+    <Sound WwiseData="true" WwiseEvent="YOKE_MOVEMENT" ViewPoint="Inside" NodeName="HANDLING_Yoke_LR_Helper">
+      <WwiseRTPC SimVar="YOKE X POSITION" Units="PERCENT" Index="0" Derived="true" RTPCName="SIMVAR_YOKE_X_POSITION_DERIVED"/>
+      <WwiseRTPC SimVar="YOKE Y POSITION" Units="PERCENT" Index="1" Derived="true" RTPCName="SIMVAR_YOKE_Y_POSITION_DERIVED"/>
+    </Sound>     
+	<Sound WwiseData="true" WwiseEvent="rotor1_move">
+		<WwiseRTPC SimVar="ROTOR RPM" Units="RPM" Index="" RTPCName="SIMVAR_ROTOR_RPM" />
+		<WwiseRTPC SimVar="ROTOR RPM" Units="RPM" Index="2" RTPCName="SIMVAR_ROTOR2_RPM" />
+    </Sound>  
+
+  </AlwaysPlaySounds>
+	
+	
+	
+<!-- ENGINE SOUNDS ========================================================================================== 
+	
+	Engine state: These sounds are linked to the state of the engine of the SimObject. Three different engine states are differentiated: 
+	'Start', 'On' and 'Off', and three boolean values must thus be defined to set when the sound should be played in relation to the engine’s state.
+	
+	Engine transition: The sound triggers when the engine goes from one state to another. A 'StateTo' and a 'StateFrom' values will be needed for the sound to be playable, each can be set to 'Off', 'Start' or 'On'.
+	
+	Engine presets: These are set to specific play conditions based on their WwiseEvent, and mimic the behavior of the respective presets in the legacy sound.cfg format. 
+	The wwise event will be named accordingly to the EngineIndex (X) and the FSX legacy naming. 
+	By default, in a wwise data approach, each 'EngineSoundPresets' event receives Simvar values through Wwise RTPCs.
+	'RPMMin' : this setting allows to set the minimum RPM threshold ( GENERAL ENG RPM simvar) from which the engine loop stops, and from which the Shutdown sound plays.
+	xml:'JetWhine' -		wwise event name:'engX_jet_whine' -			type:'loop'
+	xml:'NonCombustion' -	wwise event name:'engX_non_combustion' -	type:'Loop'
+	xml:'Starter' -			wwise event name:'engX_starter' -			type:'Loop'
+	xml:'CombustionStart' - wwise event name:'engX_combustion_start' -	type:'OneShot'
+	xml:'Combustion' -		wwise event name:'engX_combustion' -		type:'OneShot'
+	xml:'Propeller' -		wwise event name:'engX_prop' -				type:'Loop'
+	xml:'Rotor' -			wwise event name:'engX_rotor' -				type:'Loop'
+	xml:'Shutdown' -		wwise event name:'engX_shutdown' -			type:'OnbeShot'
+-->
+
+
+  <EngineSoundPresets>
+  
+    <Sound WwiseEvent="Combustion" ConeHeading="180" RPMMin="247" WwiseData="true" EngineIndex="1" FadeOutType="2" FadeOutTime="5">
+		<WwiseRTPC SimVar="ROTOR RPM" Units="RPM" Index="2" RTPCName="SIMVAR_ROTOR2_RPM" />
+ 	</Sound>
+
+	<!-- MAIN ROTOR ###################################################################################################################-->     
+	<Sound WwiseEvent="Rotor" FadeOutType="2" FadeOutTime="2" WwiseData="true" RPMMin="247" RotorIndex="1" EngineIndex="1"  >
+		<WwiseRTPC SimVar="ROTOR COLLECTIVE BLADE PITCH PCT" Units="PERCENT" Index="1" RTPCName="SIMVAR_ROTOR_COLLECTIVE_BLADE_PITCH_PCT" RTPCAttackTime="0.5" RTPCReleaseTime="0.5"/>
+		<WwiseRTPC SimVar="ROTOR RPM" Units="RPM" Index="2" RTPCName="SIMVAR_ROTOR2_RPM" />
+		<WwiseRTPC Localvar="windowVentPilot" RTPCName="LVAR_windowVentPilot" />
+		<WwiseRTPC Localvar="windowVentCopilot" RTPCName="LVAR_windowVentCopilot" />
+	</Sound>	
+	
+	<Sound WwiseEvent="Rotor" CustomSuffix="elevation" ConePitch="-90" FadeOutType="247" FadeOutTime="2" RPMMin="247" WwiseData="true" RotorIndex="1" EngineIndex="1" >
+	  <WwiseRTPC SimVar="ROTOR COLLECTIVE BLADE PITCH PCT" Units="PERCENT" Index="1" RTPCName="SIMVAR_ROTOR_COLLECTIVE_BLADE_PITCH_PCT" RTPCAttackTime="0.5" RTPCReleaseTime="0.5"/>
+		<WwiseRTPC SimVar="ROTOR RPM" Units="RPM" Index="2" RTPCName="SIMVAR_ROTOR2_RPM" />
+    </Sound>
+	
+	<Sound WwiseEvent="Rotor" CustomSuffix="side" ConeHeading="-90" FadeOutType="2" FadeOutTime="2" RPMMin="247" WwiseData="true" RotorIndex="1" EngineIndex="1"  >	
+	  <WwiseRTPC SimVar="ROTOR COLLECTIVE BLADE PITCH PCT" Units="PERCENT" Index="1" RTPCName="SIMVAR_ROTOR_COLLECTIVE_BLADE_PITCH_PCT" RTPCAttackTime="0.5" RTPCReleaseTime="0.5"/>
+		<WwiseRTPC SimVar="ROTOR RPM" Units="RPM" Index="2" RTPCName="SIMVAR_ROTOR2_RPM" />
+    </Sound>
+	
+	
+	<Sound WwiseEvent="Shutdown" FadeOutType="2" FadeOutTime="1" WwiseData="true" RPMMin="247" RotorIndex="1" EngineIndex="1"  >
+		<WwiseRTPC SimVar="ROTOR COLLECTIVE BLADE PITCH PCT" Units="PERCENT" Index="1" RTPCName="SIMVAR_ROTOR_COLLECTIVE_BLADE_PITCH_PCT" RTPCAttackTime="0.5" RTPCReleaseTime="0.5"/>
+		<WwiseRTPC SimVar="ROTOR RPM" Units="RPM" Index="1" RTPCName="SIMVAR_ROTOR_RPM" />
+	</Sound>	
+
+	<Sound WwiseEvent="Shutdown" CustomSuffix="elevation" ConePitch="-90" FadeOutType="2" FadeOutTime="1" WwiseData="true" RPMMin="247" RotorIndex="1" EngineIndex="1"  >
+		<WwiseRTPC SimVar="ROTOR COLLECTIVE BLADE PITCH PCT" Units="PERCENT" Index="1" RTPCName="SIMVAR_ROTOR_COLLECTIVE_BLADE_PITCH_PCT" RTPCAttackTime="0.5" RTPCReleaseTime="0.5"/>
+		<WwiseRTPC SimVar="ROTOR RPM" Units="RPM" Index="1" RTPCName="SIMVAR_ROTOR_RPM" />
+	</Sound>	
+
+	<Sound WwiseEvent="Shutdown" CustomSuffix="side" ConeHeading="-90" FadeOutType="2" FadeOutTime="1" WwiseData="true" RPMMin="247" RotorIndex="1" EngineIndex="1"  >
+		<WwiseRTPC SimVar="ROTOR COLLECTIVE BLADE PITCH PCT" Units="PERCENT" Index="1" RTPCName="SIMVAR_ROTOR_COLLECTIVE_BLADE_PITCH_PCT" RTPCAttackTime="0.5" RTPCReleaseTime="0.5"/>
+		<WwiseRTPC SimVar="ROTOR RPM" Units="RPM" Index="1" RTPCName="SIMVAR_ROTOR_RPM" />
+	</Sound>	
+
+	
+	<!-- TAIL ROTOR ###################################################################################################################-->     
+	<Sound WwiseEvent="Rotor" ConeHeading="90" FadeOutType="2" FadeOutTime="1" WwiseData="true" RPMMin="200" RotorIndex="2" EngineIndex="1"  >
+      <WwiseRTPC SimVar="TAIL ROTOR PEDAL POSITION" Units="PERCENT" Index="0" RTPCName="SIMVAR_TAIL_ROTOR_PEDAL_POSITION" RTPCAttackTime="1" RTPCReleaseTime="1"/>
+	</Sound>
+	
+	<!-- SHUTDOWN TAIL ROTOR ###################################################################################################################-->     
+    <Sound WwiseEvent="Shutdown" ConeHeading="90" RPMMin="1500" WwiseData="true" RotorIndex="2" EngineIndex="1" >   
+		<WwiseRTPC SimVar="ROTOR RPM" Units="RPM" Index="1" RTPCName="SIMVAR_ROTOR_RPM" />	
+    </Sound> 
+		
+  </EngineSoundPresets>
+  
+  
+<!-- SIMVAR SOUNDS ========================================================================================== 
+	These sounds react to the changes in values in the simulation variables directly. They can either be played when the watched value changes, or when the value reaches a specific range. 
+	A Range is defined by a 'LowerBound' value and an 'UpperBound' value. These values default to -∞ and +∞. If no Range is set, value changes triggers the sound. 
+	These sounds will need a 'SimVar' setting, followed by 'Units' and 'Index'. These three settings will define the simulation variable value that will be watched.
+	In addition to the 'Range" parameters, the 'Require' element allows to add other 'Simvar' or 'LocalVar' (see below) conditions on a sound to be played. (and logic)
+	In addition to previous settings, 'ContinuousStopDelay' can be set to a value in seconds, and will delay the stop of the continuous sound linked to the simvar after the condition for stopping has been reached.
+-->
+
+  <SimVarSounds> 
+  
+   	<Sound WwiseEvent="rotor1_combustion_start" SimVar="GENERAL ENG STARTER ACTIVE" Continuous="false" ConeHeading="0" Units="BOOLEAN" FadeOutType="2" FadeOutTime="70" WwiseData="true" Index="1">
+		<WwiseRTPC SimVar="ROTOR RPM" Units="RPM" Index="2" RTPCName="SIMVAR_ROTOR2_RPM" />
+		<Range LowerBound="1" />	
+		<Requires SimVar="TURB ENG N1" Units="PERCENT" Index="1">
+			<Range LowerBound="0.1" UpperBound="80" />
+		</Requires>		
+	</Sound>     
+
+  	<Sound WwiseEvent="rotor1_combustion_start_side" SimVar="GENERAL ENG STARTER ACTIVE" Continuous="false" ConeHeading="-90" Units="BOOLEAN" FadeOutType="2" FadeOutTime="70" WwiseData="true" Index="1">
+		<WwiseRTPC SimVar="ROTOR RPM" Units="RPM" Index="2" RTPCName="SIMVAR_ROTOR2_RPM" />
+		<Range LowerBound="1" />	
+		<Requires SimVar="TURB ENG N1" Units="PERCENT" Index="1">
+			<Range LowerBound="0.1" UpperBound="80" />
+		</Requires>		
+	</Sound>      
+
+	<Sound WwiseEvent="rotor1_combustion_start_elevation" SimVar="GENERAL ENG STARTER ACTIVE" Continuous="false" ConeHeading="-90" Units="BOOLEAN" FadeOutType="2" FadeOutTime="70" WwiseData="true" Index="1">
+		<WwiseRTPC SimVar="ROTOR RPM" Units="RPM" Index="2" RTPCName="SIMVAR_ROTOR2_RPM" />
+		<Range LowerBound="1" />	
+		<Requires SimVar="TURB ENG N1" Units="PERCENT" Index="1">
+			<Range LowerBound="0.1" UpperBound="80" />
+		</Requires>		
+	</Sound>    
+	
+	<Sound WwiseEvent="rotor2_combustion_start" SimVar="GENERAL ENG STARTER ACTIVE" Continuous="false" NodeName="SK_ROTOR_TAIl_AXLE" ConeHeading="-90" Units="BOOLEAN" FadeOutType="2" FadeOutTime="70" WwiseData="true" Index="1">
+		<WwiseRTPC SimVar="ROTOR RPM" Units="RPM" Index="2" RTPCName="SIMVAR_ROTOR2_RPM" />
+		<Range LowerBound="1" />	
+		<Requires SimVar="TURB ENG N1" Units="PERCENT" Index="1">
+			<Range LowerBound="0.1" UpperBound="80" />
+		</Requires>		
+	</Sound>    
+	
+	<!-- INSTRUMENTS FOLEYS  =========================================================================  --> 
+     
+    <Sound WwiseData="true" WwiseEvent="lever_collective" ViewPoint="Inside" NodeName="SK_ARM_COLLECTIVE_PILOT" ContinuousStopDelay="0.1" SimVar="COLLECTIVE POSITION" Units="PERCENT" Index="1">
+      <WwiseRTPC SimVar="COLLECTIVE POSITION" Units="PERCENT" Index="1" Derived="true" RTPCName="SIMVAR_COLLECTIVE_POSITION_DERIVED" />
+      <WwiseRTPC SimVar="COLLECTIVE POSITION" Units="PERCENT" Index="1"  RTPCName="SIMVAR_COLLECTIVE_POSITION" />
+    </Sound>
+	   
+
+    
+	<Sound WwiseData="true" WwiseEvent="lever_throttle" ViewPoint="Inside" NodeName="SK_ARM_COLLECTIVE_PILOT" ContinuousStopDelay="0.5" FadeOutType="2" FadeOutTime="0.5" Localvar="CollectiveGrip">
+		<WwiseRTPC Localvar="CollectiveGrip" RTPCName="LVAR_CollectiveGrip" />
+		<WwiseRTPC Localvar="CollectiveGrip" RTPCName="LVAR_CollectiveGrip_DERIVED" Derived="true" RTPCAttackTime="0.1" RTPCReleaseTime="0.1"/>
+    </Sound>	
+	
+	<Sound WwiseData="true" WwiseEvent="lever_throttle_click" Continuous="false" ViewPoint="Inside" NodeName="SK_ARM_COLLECTIVE_PILOT" ContinuousStopDelay="0.5" FadeOutType="2" FadeOutTime="0.5" Localvar="collGripState">
+		<Range LowerBound="1" UpperBound="1"/>
+    </Sound>
+    
+    <Sound WwiseData="true" WwiseEvent="pedal_movement" ViewPoint="Inside" NodeName="HANDLING_RudderPedals_right_03" ContinuousStopDelay="0.5" SimVar="TAIL ROTOR PEDAL POSITION" Units="PERCENT" Index="0">
+      <WwiseRTPC SimVar="TAIL ROTOR PEDAL POSITION" Units="PERCENT" Index="0" Derived="true" RTPCName="SIMVAR_TAIL_ROTOR_PEDAL_POSITION_DERIVED" RTPCAttackTime="0.1" RTPCReleaseTime="0.1"/>  
+    </Sound>  
+	
+	
+	<!-- MISC ========================================================================================== -->  	
+	
+	<Sound WwiseData="true" WwiseEvent="circuit_battery_on" SimVar="ELECTRICAL MASTER BATTERY" NodeName="AS430_SCREEN_1" Units="BOOLEAN" Index="0" ContinuousStopDelay="60" >
+	  <WwiseRTPC SimVar="ELECTRICAL MASTER BATTERY" Units="BOOLEAN" Index="0" RTPCName="SIMVAR_ELECTRICAL_MASTER_BATTERY" RTPCAttackTime="20" RTPCReleaseTime="30"/>
+      <Range LowerBound="1.0" />
+    </Sound> 
+
+	
+	<Sound WwiseData="true" WwiseEvent="landing" SimVar="SIM ON GROUND" Units="Bool" Index="0" Continuous="False"> 
+	    <Range LowerBound="1" />
+		<WwiseRTPC SimVar="VERTICAL SPEED" Units="FEET PER SECOND" Index="0" RTPCAttackTime="1" Derived="true" RTPCName="SIMVAR_VERTICAL_SPEED_DERIVED"/> 
+    </Sound> 
+	
+	<!-- PROPELLER WIND ========================================================================================== --> 
+	
+	<Sound WwiseData="true" WwiseEvent="rotor_wind" ConePitch="90" SimVar="GENERAL ENG RPM" Units="RPM" Index="1" NodeName="b407_main_rotor_rotation">  
+	   <Range LowerBound="1"/>
+		<WwiseRTPC SimVar="ROTOR RPM" Units="RPM" Index="2" RTPCName="SIMVAR_ROTOR2_RPM" />
+	   <WwiseRTPC SimVar="ROTOR COLLECTIVE BLADE PITCH PCT" Units="PERCENT" Index="1" RTPCName="SIMVAR_ROTOR_COLLECTIVE_BLADE_PITCH_PCT" RTPCAttackTime="0.5" RTPCReleaseTime="0.5"/>  
+       <WwiseRTPC SimVar="PLANE ALT ABOVE GROUND MINUS CG" Units="METERS" Index="1"  RTPCName="SIMVAR_PLANE_ALT_ABOVE_GROUND_MINUS_CG" />
+       <WwiseRTPC SimVar="INTERACTIVE POINT OPEN" Units="PERCENT OVER 100" Index="0"  RTPCName="SIMVAR_INTERACTIVE_POINT_OPEN_0" />
+       <WwiseRTPC SimVar="INTERACTIVE POINT OPEN" Units="PERCENT OVER 100" Index="1"  RTPCName="SIMVAR_INTERACTIVE_POINT_OPEN_1" />
+    </Sound>  
+		
+	<!-- RATTLES ========================================================================================== --> 
+
+	<Sound WwiseData="true" WwiseEvent="rattle_thrust" ViewPoint="Inside" FadeOutType="2" FadeOutTime="0.5" ContinuousStopDelay="0.5" SimVar="GENERAL ENG COMBUSTION" Units="BOOLEAN" Index="1" >
+      <Range LowerBound="1" />
+      <WwiseRTPC SimVar="SIM ON GROUND" Units="BOOL" Index="1" RTPCReleaseTime="0.5" RTPCName="SIMVAR_SIM_ON_GROUND" />  
+	   <WwiseRTPC SimVar="ROTOR COLLECTIVE BLADE PITCH PCT" Units="PERCENT" Index="1" RTPCName="SIMVAR_ROTOR_COLLECTIVE_BLADE_PITCH_PCT" RTPCAttackTime="0.5" RTPCReleaseTime="0.5"/>  
+	  <WwiseRTPC SimVar="ROTOR COLLECTIVE BLADE PITCH PCT" Units="PERCENT OVER 100" Derived="true" Index="1" RTPCAttackTime="1" RTPCReleaseTime="1" RTPCName="SIMVAR_ROTOR_COLLECTIVE_BLADE_PITCH_PCT_STRESS_DERIVED" />
+	  <WwiseRTPC SimVar="ROTOR COLLECTIVE BLADE PITCH PCT" Units="PERCENT OVER 100" Derived="true"  RTPCAttackTime="1" RTPCReleaseTime="3" Index="1" RTPCName="SIMVAR_ROTOR_COLLECTIVE_BLADE_PITCH_PCT_RATTLE_DERIVED" />
+    </Sound> 
+	
+  	<!-- RAIN ========================================================================================== --> 
+	
+    <Sound WwiseData="true" WwiseEvent="rain_sound" SimVar="AMBIENT PRECIP RATE" Units="millimeters of water" Index="0"> 
+		<Range LowerBound="0.1" />
+	    <WwiseRTPC SimVar="AMBIENT PRECIP RATE" Units="millimeters of water" Index="0" RTPCName="SIMVAR_AMBIENT_PRECIP_RATE"/> 
+        <WwiseRTPC SimVar="AIRSPEED TRUE" Units="KNOTS" Index="0" RTPCName="SIMVAR_AIRSPEED_TRUE"/> 
+    </Sound> 
+	 
+	<!-- Alarms ========================================================================================== -->
+
+	  <Sound WwiseData="true" WwiseEvent="Caution_alarm" LocalVar="hornCaution" NodeName="collider_switch_battery" FadeOutType="2" FadeOutTime="0.1">
+		  <Range LowerBound="1" />
+	  </Sound>
+
+	  <Sound WwiseData="true" WwiseEvent="fadec_horn_test_alarm" LocalVar="hornFadecTest" NodeName="collider_switch_battery" FadeOutType="2" FadeOutTime="0.1">
+		  <Range LowerBound="1" />
+	  </Sound>
+
+	  <Sound WwiseData="true" WwiseEvent="Overspeed_test" LocalVar="testOvrspd" NodeName="collider_switch_battery" FadeOutType="2" FadeOutTime="0.1">
+		  <Range LowerBound="1" />
+	  </Sound> 
+	
+
+
+	
+	<!-- Switches 'n buttons -->
+	
+	<!-- Generic overhead switchh =========================================================================--> 
+	<!-- <Sound WwiseEvent="generic_overhead_switch" WwiseData="true" NodeName="collider_switch_defog" LocalVar="switchSound"/> -->
+	
+	
+	<!-- Yoke buttons =========================================================================--> 
+	<Sound WwiseEvent="starter_switch" WwiseData="true" Continuous="false" NodeName="GOVERNOR_START_01" Model="Interior" Animation="GOVERNOR_START_01"/>
+	<Sound WwiseEvent="light_landing_switch" WwiseData="true" Continuous="false" NodeName="landing_s" Model="Interior" Animation="landing_s"/>
+	<Sound WwiseEvent="Overhead_switch" WwiseData="true" Continuous="false" NodeName="Heads_up" Model="Interior" Animation="Heads_up"/>
+	
+	<!-- Overhead switches =========================================================================--> 
+
+	<Sound WwiseEvent="Overhead_switch" WwiseData="true" Continuous="false" NodeName="collider_switch_radio_alt" Model="Interior" Animation="SWITCH_radio"/>
+	<Sound WwiseEvent="Overhead_switch" WwiseData="true" Continuous="false" NodeName="collider_switch_fdr" Model="Interior" Animation="SWITCH_fdr"/>
+	<Sound WwiseEvent="Overhead_switch" WwiseData="true" Continuous="false" NodeName="collider_switch_fuelboost_right" Model="Interior" Animation="SWITCH_fuelboost_right"/>
+	<Sound WwiseEvent="Overhead_switch" WwiseData="true" Continuous="false" NodeName="collider_switch_fuelboost_left" Model="Interior" Animation="SWITCH_fuelboost_left"/>
+	<Sound WwiseEvent="Overhead_switch" WwiseData="true" Continuous="false" NodeName="collider_switch_light_logo" Model="Interior" Animation="SWITCH_light_logo"/>
+	<Sound WwiseEvent="Overhead_switch" WwiseData="true" Continuous="false" NodeName="collider_switch_broadcast_master" Model="Interior" Animation="SWITCH_broadcast_master"/>
+	<Sound WwiseEvent="Overhead_switch" WwiseData="true" Continuous="false" NodeName="master_bat_1" Model="Interior" Animation="master_bat_1"/>
+	<Sound WwiseEvent="Overhead_switch" WwiseData="true" Continuous="false" NodeName="INSTRUMENT_AttitudeIndicator_Knob_1" Model="Interior" Animation="INSTRUMENT_AttitudeIndicator_Knob_1"/>
+	<Sound WwiseEvent="Overhead_switch" WwiseData="true" Continuous="false" NodeName="INSTRUMENT_Knob_Altimeter_Visual_1" Model="Interior" Animation="INSTRUMENT_Knob_Altimeter_Visual_1"/>
+	<Sound WwiseEvent="Overhead_switch" WwiseData="true" Continuous="false" NodeName="collider_switch_turncoord" Model="Interior" Animation="SWITCH_turn_coord"/>
+	<Sound WwiseEvent="Overhead_knob" WwiseData="true" Continuous="false" NodeName="LIGHTING_Knob_Panel" Model="Interior" Animation="LIGHTING_Knob_Panel"/>
+	<Sound WwiseEvent="Overhead_knob" WwiseData="true" Continuous="false" NodeName="LIGHTING_Knob_Pedestal" Model="Interior" Animation="LIGHTING_Knob_Pedestal"/>
+	<Sound WwiseEvent="Overhead_switch" WwiseData="true" Continuous="false" NodeName="collider_switch_force_trim" Model="Interior" Animation="SWITCH_force_trim"/>
+	<Sound WwiseEvent="Overhead_switch" WwiseData="true" Continuous="false" NodeName="collider_switch_aircond_mode" Model="Interior" Animation="SWITCH_aircond_mode"/>
+	<Sound WwiseEvent="Overhead_switch" WwiseData="true" Continuous="false" NodeName="collider_switch_aircond_fwd" Model="Interior" Animation="SWITCH_aircond_fwd"/>
+	<Sound WwiseEvent="Overhead_switch" WwiseData="true" Continuous="false" NodeName="collider_switch_aircond_aft" Model="Interior" Animation="SWITCH_aircond_aft"/>
+	<Sound WwiseEvent="Overhead_switch" WwiseData="true" Continuous="false" NodeName="collider_switch_heater" Model="Interior" Animation="SWITCH_heater"/>
+	<Sound WwiseEvent="Overhead_switch" WwiseData="true" Continuous="false" NodeName="collider_switch_light_caut_mode" Model="Interior" Animation="SWITCH_light_caut_mode"/>
+	<Sound WwiseEvent="Overhead_switch" WwiseData="true" Continuous="false" NodeName="collider_switch_light_cabin_pass" Model="Interior" Animation="SWITCH_light_cabin_pass"/>
+	<Sound WwiseEvent="Overhead_switch" WwiseData="true" Continuous="false" NodeName="Nav_1" Model="Interior" Animation="Nav_1"/>
+	<Sound WwiseEvent="Overhead_switch" WwiseData="true" Continuous="false" NodeName="collider_switch_defog" Model="Interior" Animation="SWITCH_defog"/>
+	<Sound WwiseEvent="Overhead_switch" WwiseData="true" Continuous="false" NodeName="Pitot_1" Model="Interior" Animation="Pitot_1"/>
+	<Sound WwiseEvent="Overhead_switch" WwiseData="true" Continuous="false" NodeName="collider_switch_eng_deice" Model="Interior" Animation="SWITCH_eng_deice"/>
+	<Sound WwiseEvent="Overhead_switch" WwiseData="true" Continuous="false" NodeName="collider_switch_particle_sep" Model="Interior" Animation="SWITCH_particle_sep"/>
+	<Sound WwiseEvent="Overhead_switch" WwiseData="true" Continuous="false" NodeName="ENGINE_Switch_Hydraulic" Model="Interior" Animation="ENGINE_Switch_Hydraulic"/>
+	<Sound WwiseEvent="Overhead_switch" WwiseData="true" Continuous="false" NodeName="collider_switch_autotrim" Model="Interior" Animation="SWITCH_autotrim"/>
+	<Sound WwiseEvent="Overhead_switch" WwiseData="true" Continuous="false" NodeName="Ant_COL" Model="Interior" Animation="Ant_COL"/>
+	<Sound WwiseEvent="Overhead_switch" WwiseData="true" Continuous="false" NodeName="master_strobe_1" Model="Interior" Animation="master_strobe_1"/>
+	<Sound WwiseEvent="Overhead_switch" WwiseData="true" Continuous="false" NodeName="collider_switch_light_pulse" Model="Interior" Animation="SWITCH_light_pulse"/>
+	<Sound WwiseEvent="Overhead_switch" WwiseData="true" Continuous="false" NodeName="collider_switch_generator" Model="Interior" Animation="SWITCH_generator"/>
+	<Sound WwiseEvent="Overhead_switch" WwiseData="true" Continuous="false" NodeName="master_bat_1" Model="Interior" Animation="master_bat_1"/>
+	
+	<!-- front switches =========================================================================--> 
+	<Sound WwiseEvent="vent_lever" WwiseData="true" ContinuousStopDelay="0.5" NodeName="collider_vent_knob_pilot" Model="Interior" Animation="vent_knob_pilot">
+        <WwiseRTPC Animation="vent_knob_pilot" Model="Interior" Derived="true" RTPCAttackTime="0.5" RTPCReleaseTime="0.5" RTPCName="Anim_vent_knob_pilot_DERIVED"/> 
+	</Sound> 
+	<Sound WwiseEvent="vent_lever" WwiseData="true" ContinuousStopDelay="0.5" NodeName="collider_vent_knob_copilot" Model="Interior" Animation="vent_knob_copilot">
+        <WwiseRTPC Animation="vent_knob_pilot" Model="Interior" Derived="true" RTPCAttackTime="0.5" RTPCReleaseTime="0.5" RTPCName="Anim_vent_knob_pilot_DERIVED"/> 
+    </Sound> 
+	<Sound WwiseEvent="generic_front_square_button" WwiseData="true" Continuous="false" NodeName="collider_button_fadec_mode" Model="Interior" Animation="button_fadec_mode"/>
+	<Sound WwiseEvent="generic_front_square_button" WwiseData="true" Continuous="false" NodeName="collider_switch_float" Model="Interior" Animation="switch_float"/>
+	<Sound WwiseEvent="generic_front_square_button" WwiseData="true" Continuous="false" NodeName="engine_fire" Model="Interior" Animation="engine_fire"/>
+	<Sound WwiseEvent="generic_front_square_button" WwiseData="true" Continuous="false" NodeName="GPS_Navigation" Model="Interior" Animation="GPS_Navigation"/>
+	<Sound WwiseEvent="generic_front_square_button" WwiseData="true" Continuous="false" NodeName="VOR_Navigation" Model="Interior" Animation="VOR_Navigation"/>
+
+	<Sound WwiseEvent="generic_front_round_button" WwiseData="true" Continuous="false" NodeName="collider_button_fuel_qty" Model="Interior" Animation="button_fuel_qty"/>
+	<Sound WwiseEvent="generic_front_round_button" WwiseData="true" Continuous="false" NodeName="collider_button_overspeed_test" Model="Interior" Animation="button_overspeed_test"/>
+	<Sound WwiseEvent="generic_front_round_button" WwiseData="true" Continuous="false" NodeName="collider_button_horn_test" Model="Interior" Animation="button_horn_test"/>
+	<Sound WwiseEvent="generic_front_round_button" WwiseData="true" Continuous="false" NodeName="collider_button_lcd_test" Model="Interior" Animation="button_lcd_test"/>
+	<Sound WwiseEvent="generic_front_round_button" WwiseData="true" Continuous="false" NodeName="collider_button_insrt_test" Model="Interior" Animation="button_insrt_test"/>
+	<Sound WwiseEvent="generic_front_round_button" WwiseData="true" Continuous="false" NodeName="collider_button_horn_mute" Model="Interior" Animation="button_horn_mute"/>
+	<Sound WwiseEvent="generic_front_round_button" WwiseData="true" Continuous="false" NodeName="test_push" Model="Interior" Animation="test_push"/>
+	<Sound WwiseEvent="generic_front_round_button" WwiseData="true" Continuous="false" NodeName="test_push_2" Model="Interior" Animation="test_push_2"/>
+	
+	<Sound WwiseEvent="primary_compass_mode" Continuous="false" WwiseData="true" NodeName="collider_switch_primary_compass_mode" Model="Interior" Animation="switch_primary_compass_mode"/>
+	<Sound WwiseEvent="primary_compass_adjust" Continuous="false" WwiseData="true" NodeName="collider_switch_primary_compass_adjust" Model="Interior" Animation="switch_primary_compass_adjust"/>
+	<Sound WwiseEvent="elt_switch" WwiseData="true" Continuous="false" NodeName="collider_switch_elt" Model="Interior" Animation="switch_elt"/>
+	<Sound WwiseEvent="fuel_valve_cover" WwiseData="true" Continuous="false" NodeName="collider_switch_fuel_valve_cover" Model="Interior" Animation="switch_fuel_valve_cover"/>
+	<Sound WwiseEvent="fuel_valve_switch" WwiseData="true" Continuous="false" NodeName="FUEL_1_Pump_1" Model="Interior" Animation="FUEL_1_Pump_1"/>
+
+	<!-- Misc =========================================================================-->
+	  <Sound WwiseEvent="cargo_release_switch" WwiseData="true" Continuous="false" NodeName="collider_switch_cargo_release" Model="Interior" Animation="SWITCH_cargo_release"/>
+	  <Sound WwiseEvent="defrost_adjust_knob" WwiseData="true" FadeOutType="2" FadeOutTime="0.5" ContinuousStopDelay="0.5"  NodeName="collider_knob_defrost_adjust" Model="Interior" Animation="B407_knob_defrost_adjust">
+		  <WwiseRTPC Animation="
+					 knob_defrost_adjust" Model="Interior" Derived="true" RTPCAttackTime="0.1" RTPCReleaseTime="0.1" RTPCName="Anim_knob_defrost_adjust_DERIVED"/>
+	  </Sound>
+	  <Sound WwiseEvent="friction_knob" WwiseData="true" FadeOutType="2" FadeOutTime="0.5" ContinuousStopDelay="0.5" NodeName="collider_knob_friction_adjust" LocalVar="knobfriction">
+		  <WwiseRTPC LocalVar="knobfriction" Derived="true" RTPCAttackTime="0.1" RTPCReleaseTime="0.1" RTPCName="LVAR_knob_friction_DERIVED"/>
+	  </Sound>
+
+	  <Sound WwiseEvent="pilot_window_opening" WwiseData="true" FadeOutType="2" FadeOutTime="0.5" ContinuousStopDelay="0.5" NodeName="collider_window_vent_pilot" LocalVar="windowVentPilot">
+		  <WwiseRTPC LocalVar="windowVentPilot" Derived="true" RTPCAttackTime="0.1" RTPCReleaseTime="0.1" RTPCName="LVAR_windowVentPilot_DERIVED"/>
+	  </Sound>
+
+	  <Sound WwiseEvent="copilot_window_opening" WwiseData="true" FadeOutType="2" FadeOutTime="0.5" ContinuousStopDelay="0.5" NodeName="collider_window_vent_copilot" LocalVar="windowVentCoPilot">
+		  <WwiseRTPC LocalVar="windowVentCoPilot" Derived="true" RTPCAttackTime="0.1" RTPCReleaseTime="0.1" RTPCName="LVAR_windowVentCoPilot_DERIVED"/>
+	  </Sound>
+
+	  <Sound WwiseEvent="pilot_window_opening_stop" WwiseData="true" FadeOutType="2" FadeOutTime="0.5" ContinuousStopDelay="0.5" Continuous="false" NodeName="collider_window_vent_pilot" LocalVar="windowVentPilot">
+		  <Range UpperBound="0"/>
+		  <Range LowerBound="100"/>
+		  <WwiseRTPC LocalVar="windowVentPilot" Derived="true" RTPCAttackTime="0.5" RTPCReleaseTime="0.1" RTPCName="LVAR_windowVentPilot_DERIVED"/>
+	  </Sound>
+
+	  <Sound WwiseEvent="copilot_window_opening_stop" WwiseData="true" FadeOutType="2" FadeOutTime="0.5" ContinuousStopDelay="0.5" Continuous="false" NodeName="collider_window_vent_copilot" LocalVar="windowVentCoPilot">
+		  <Range UpperBound="0"/>
+		  <Range LowerBound="100"/>
+		  <WwiseRTPC LocalVar="windowVentCoPilot" Derived="true" RTPCAttackTime="0.1" RTPCReleaseTime="0.1" RTPCName="LVAR_windowVentCoPilot_DERIVED"/>
+	  </Sound>
+
+	<!-- rotor =========================================================================--> 
+	<Sound WwiseEvent="rotor_brake_lever_pull" WwiseData="true" Continuous="false" NodeName="collider_lever_rotor_brake" Model="Interior" Animation="lever_rotor_brake">
+        <WwiseRTPC Animation="lever_rotor_brake" Model="Interior" Derived="true" RTPCName="Anim_lever_rotor_brake_DERIVED"/> 
+		<Range LowerBound = "0.1"/>
+	</Sound> 
+	<Sound WwiseEvent="rotor_brake_lever_push" WwiseData="true" Continuous="false" NodeName="collider_lever_rotor_brake" Model="Interior" Animation="lever_rotor_brake">
+	    <WwiseRTPC Animation="lever_rotor_brake" Model="Interior" Derived="true" RTPCName="Anim_lever_rotor_brake_DERIVED"/> 
+		<Range UpperBound = "0.9"/>
+	</Sound> 
+	<Sound WwiseEvent="rotor_brake_lever_pull" WwiseData="true" Continuous="false" NodeName="Switch_Clutch" Model="Interior" Animation="Switch_Clutch">
+        <WwiseRTPC Animation="lever_rotor_brake" Model="Interior" Derived="true" RTPCName="Anim_lever_rotor_brake_DERIVED"/> 
+		<Range LowerBound = "0.1"/>
+	</Sound> 
+	<Sound WwiseEvent="rotor_brake_lever_push" WwiseData="true" Continuous="false" NodeName="Switch_Clutch" Model="Interior" Animation="Switch_Clutch">
+	    <WwiseRTPC Animation="lever_rotor_brake" Model="Interior" Derived="true" RTPCName="Anim_lever_rotor_brake_DERIVED"/> 
+		<Range UpperBound = "0.9"/>
+	</Sound>
+	<Sound WwiseEvent="rotor_brake_lever_pull" WwiseData="true" Continuous="false" NodeName="Tablet" Model="Interior" Animation="Tablet">
+	    <WwiseRTPC Animation="lever_rotor_brake" Model="Interior" Derived="true" RTPCName="Anim_lever_rotor_brake_DERIVED"/> 
+		<Range UpperBound = "0.9"/>
+	</Sound>
+	<Sound WwiseEvent="rotor_brake_lever_push" WwiseData="true" Continuous="false" NodeName="Tablet" Model="Interior" Animation="Tablet">
+	    <WwiseRTPC Animation="lever_rotor_brake" Model="Interior" Derived="true" RTPCName="Anim_lever_rotor_brake_DERIVED"/> 
+		<Range UpperBound = "0.9"/>
+	</Sound>
+  </SimVarSounds>
+
+
+
+
+<!-- ANIMATION SOUNDS ========================================================================================== 
+These sounds are triggered on Animations implemented in the Simobjects model xml files, and use ModelBehaviors element. Their main purpose is to play buttons and switches sounds in the cockpit, 
+but they can also be used elsewhere, e.g. on flight control sounds, levers, Jetways animations…etc.
+'NormalizedTime' : Normalized time of the animation from which the sound will play. It’s going from 0 to 1. This attribute must be used alone, without a 'Count' or 'Frame' attribute.
+'Count' : This attribute divides the animation timeline in equal segments by the value written . Sounds will play at the midlle of each segment. e.g. This attribute must be used alone, without a 'NormalizedTime' or 'Frame' attribute.
+'Frame' : the frame of the animation where the sound will be played. this attribute must be used alone, without a 'Count' or 'NormalizedTime' attribute.
+'Direction' : Determines the direction of the animation timeline in which the sound will be played. So the sound can play when the animation goes in the : 'Forward', 'Backward', or in 'Both' direction.
+'SoundEvent' child element that contains these attributes : 'WwiseEvent - it’s the same attribute that must also be set in the sound.xml, 'Action' - Play or Stop value. The stop is useful for loops.
+-->
+
+
+	<AnimationSounds>
+	<!-- GNS530 ########################################################################################--> 
+	<Sound WwiseData="true" WwiseEvent="gns530_push_button_on" ViewPoint="Inside"/>
+	<Sound WwiseData="true" WwiseEvent="gns530_push_button_off" ViewPoint="Inside"/>
+	<!-- <Sound WwiseData="true" WwiseEvent="gns530_switch_on" ViewPoint="Inside"/> -->
+	<!-- <Sound WwiseData="true" WwiseEvent="gns530_switch_off" ViewPoint="Inside"/>  -->
+	<Sound WwiseData="true" WwiseEvent="gns530_knob_push_button_on" ViewPoint="Inside"/>
+	<Sound WwiseData="true" WwiseEvent="gns530_knob_push_button_off" ViewPoint="Inside"/> 
+	<!-- <Sound WwiseData="true" WwiseEvent="gns530_largeknob_push_button_on" ViewPoint="Inside"/> -->
+	<!-- <Sound WwiseData="true" WwiseEvent="gns530_largeknob_push_button_off" ViewPoint="Inside"/> -->
+	<Sound WwiseData="true" WwiseEvent="gns530_inner_knob" ViewPoint="Inside"/>
+    <Sound WwiseData="true" WwiseEvent="gns530_outer_knob" ViewPoint="Inside"/>  
+	<Sound WwiseData="true" WwiseEvent="gns530_small_knob" ViewPoint="Inside"/>  
+	<Sound WwiseData="true" WwiseEvent="gns530_smallknob_push_button_on" ViewPoint="Inside"/>
+    <Sound WwiseData="true" WwiseEvent="gns530_smallknob_push_button_off" ViewPoint="Inside"/>
+	<Sound WwiseData="true" WwiseEvent="gns530_small_push_button_on" ViewPoint="Inside"/>
+    <Sound WwiseData="true" WwiseEvent="gns530_small_push_button_off" ViewPoint="Inside"/>
+	
+	<!-- NavComSystem ########################################################################################-->
+	<Sound WwiseData="true" WwiseEvent="navcom_push_button_on" ViewPoint="Inside"/>
+	<Sound WwiseData="true" WwiseEvent="navcom_push_button_off" ViewPoint="Inside"/>
+	<Sound WwiseData="true" WwiseEvent="navcom_audio_marker_switch" ViewPoint="Inside"/>
+	<Sound WwiseData="true" WwiseEvent="navcom_audio_volume_knob_1" ViewPoint="Inside"/>   
+
+	<!-- <Sound WwiseData="true" WwiseEvent="navcom_knob_push_button_on" ViewPoint="Inside"/> -->
+	<!-- <Sound WwiseData="true" WwiseEvent="navcom_knob_push_button_off" ViewPoint="Inside"/>	   -->
+	<Sound WwiseData="true" WwiseEvent="swap_push_button_on" ViewPoint="Inside"/>
+	<Sound WwiseData="true" WwiseEvent="swap_push_button_off" ViewPoint="Inside"/> 	  
+	<Sound WwiseData="true" WwiseEvent="navcom_volume_knob" ViewPoint="Inside"/>   
+	<Sound WwiseData="true" WwiseEvent="navcom_volume_push_button_on" ViewPoint="Inside"/>   
+	<Sound WwiseData="true" WwiseEvent="navcom_volume_push_button_off" ViewPoint="Inside"/>   
+	<Sound WwiseData="true" WwiseEvent="navcom_frequency_inner_knob" ViewPoint="Inside"/> 	
+	<Sound WwiseData="true" WwiseEvent="navcom_frequency_outer_knob" ViewPoint="Inside"/>
+	<Sound WwiseData="true" WwiseEvent="button_switch_generic" ViewPoint="Inside"/>
+	<!-- <Sound WwiseData="true" WwiseEvent="navcom_audio_transmission_knob" ViewPoint="Inside"/>   -->
+	
+	<!-- ADF ########################################################################################-->
+	<Sound WwiseData="true" WwiseEvent="ADF_push_button_on" ViewPoint="Inside"/>
+	<Sound WwiseData="true" WwiseEvent="ADF_push_button_off" ViewPoint="Inside"/>  
+	<Sound WwiseData="true" WwiseEvent="ADF_knob_push_button_on" ViewPoint="Inside"/>
+	<Sound WwiseData="true" WwiseEvent="ADF_knob_push_button_off" ViewPoint="Inside"/>  
+	<Sound WwiseData="true" WwiseEvent="adf_volume_knob" ViewPoint="Inside"/> 
+	<Sound WwiseData="true" WwiseEvent="adf_frequency_inner_knob" ViewPoint="Inside"/>  
+	<Sound WwiseData="true" WwiseEvent="adf_frequency_outer_knob" ViewPoint="Inside"/>
+
+	<!-- Transponder ########################################################################################-->
+	<Sound WwiseData="true" WwiseEvent="transponder_push_button_on" ViewPoint="Inside"/>
+	<Sound WwiseData="true" WwiseEvent="transponder_push_button_off" ViewPoint="Inside"/>
+	<Sound WwiseData="true" WwiseEvent="transponder_mode_knob" ViewPoint="Inside"/>
+	<Sound WwiseData="true" WwiseEvent="transponder_knob_value" ViewPoint="Inside"/>
+	
+	</AnimationSounds>
+
+</SoundInfo>

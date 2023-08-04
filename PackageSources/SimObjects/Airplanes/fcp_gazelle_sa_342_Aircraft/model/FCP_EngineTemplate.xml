@@ -1,0 +1,229 @@
+﻿<ModelBehaviors>
+
+	<!-- #################################################### -->
+	<!-- Template converted and now working using InputEvents -->
+	<!-- #################################################### -->
+	<Template Name="FCP_ENGINE_Starter_SubTemplate">
+		<Parameters Type="Default">
+			<NODE_ID>ENGINE_#INTERACTION_TYPE#_Starter_#ID#</NODE_ID>
+			<ANIM_NAME>ENGINE_#INTERACTION_TYPE#_Starter_#ID#</ANIM_NAME>
+			<PART_ID>ENGINE_#INTERACTION_TYPE#_Starter</PART_ID>
+			<AIRLINER>TRUE</AIRLINER>
+		</Parameters>
+		<Parameters Type="Default">
+			<Switch Param="INTERACTION_TYPE">
+				<Case Value="Switch">
+					<SWITCH_POSITION_TYPE>L</SWITCH_POSITION_TYPE>
+					<SWITCH_POSITION_VAR>XMLVAR_Starter#ID#</SWITCH_POSITION_VAR>
+					<SWITCH_POSITION_TYPE_TIMER>L</SWITCH_POSITION_TYPE_TIMER>
+					<SWITCH_POSITION_VAR_TIMER>XMLVAR_Starter#ID#_EndTimeDown</SWITCH_POSITION_VAR_TIMER>
+					<WWISE_EVENT>engine_starter_switch</WWISE_EVENT>
+					<WWISE_EVENT_1>engine_starter_switch_on</WWISE_EVENT_1>
+					<WWISE_EVENT_2>engine_starter_switch_off</WWISE_EVENT_2>
+					<Switch Param="TYPE">
+						<Case Value="2Values_StarterIgnition">
+							<STATE_START>0</STATE_START>
+							<STATE_OFF>1</STATE_OFF>
+						</Case>
+						<Case Value="3Values_StarterIgnition">
+							<STATE_START>2</STATE_START>
+							<STATE_OFF>1</STATE_OFF>
+							<STATE_MOTOR>3</STATE_MOTOR>
+							<Condition Check="MOMENTARY_SWITCH">
+								<REST_STATE>1</REST_STATE>
+								<CODE_POS_RETURN>(&gt;B:ENGINE_Starter_Ignition_#ID#_Off)</CODE_POS_RETURN>
+							</Condition>
+						</Case>
+						<Case Value="ON_OFF_ABORT">
+							<POS_ON>0</POS_ON>
+							<POS_OFF>1</POS_OFF>
+							<POS_ABORT>2</POS_ABORT>
+							<MOMENTARY_MIN_DURATION>3</MOMENTARY_MIN_DURATION>
+						</Case>
+						<Case Value="AS02A">
+							<STATE_BOTH>0</STATE_BOTH>
+							<STATE_R>1</STATE_R>
+							<STATE_L>2</STATE_L>
+							<STATE_IGN_OFF>3</STATE_IGN_OFF>
+							<STATE_ALL_OFF>4</STATE_ALL_OFF>
+						</Case>
+						<Case Value="AS04F">
+							<STATE_ENG1>0</STATE_ENG1>
+							<STATE_OFF>1</STATE_OFF>
+							<STATE_ENG2>2</STATE_ENG2>
+						</Case>
+					</Switch>
+				</Case>
+				<Case Value="Push">
+					<WWISE_EVENT_1>engine_start_push_button_on</WWISE_EVENT_1>
+					<WWISE_EVENT_2>engine_start_push_button_off</WWISE_EVENT_2>
+					<NORMALIZED_TIME_1>0.1</NORMALIZED_TIME_1>
+					<NORMALIZED_TIME_2>0.5</NORMALIZED_TIME_2>
+					<Switch Param="TYPE">
+						<Case Value="AS02A">
+							<SEQ1_EMISSIVE_CODE> 0 </SEQ1_EMISSIVE_CODE>
+							<SEQ2_EMISSIVE_CODE>(A:GENERAL ENG STARTER:#ID#, Bool)</SEQ2_EMISSIVE_CODE>
+						</Case>
+						<Default>
+							<ONLY_SEQ1/>
+							<SEQ1_EMISSIVE_CODE>(A:GENERAL ENG STARTER:#ID#, Bool)</SEQ1_EMISSIVE_CODE>
+						</Default>
+					</Switch>
+				</Case>
+			</Switch>
+		</Parameters>
+		<Parameters Type="Override">
+			<Switch Param="INTERACTION_TYPE">
+				<Case Value="Switch">
+					<Switch Param="TYPE">
+						<Case Value="AS02A">
+							<STARTER_TYPE>STARTER_IGNITION</STARTER_TYPE>
+							<IGNITION_TYPE>BOTH_R_L_OFF_STARTOFF</IGNITION_TYPE>
+							<TEMPLATE_TO_CALL>ASOBO_GT_Switch_5States</TEMPLATE_TO_CALL>
+							<SWITCH_DIRECTION>Horizontal</SWITCH_DIRECTION>
+							<ARROW_TYPE>Curved</ARROW_TYPE>
+							<CODE_POS_0>(* Ignition BOTH *) (&gt;B:ENGINE_Starter_Ignition_#ID#_Both)</CODE_POS_0>
+							<CODE_POS_1>(* Ignition RIGHT *) (&gt;B:ENGINE_Starter_Ignition_#ID#_Right)</CODE_POS_1>
+							<CODE_POS_2>(* Ignition LEFT *) (&gt;B:ENGINE_Starter_Ignition_#ID#_Left)</CODE_POS_2>
+							<CODE_POS_3>(* Ignition OFF *) (&gt;B:ENGINE_Starter_Ignition_#ID#_IgnOff)</CODE_POS_3>
+							<CODE_POS_4>(* Ignition OFF + Starter OFF *) (&gt;B:ENGINE_Starter_Ignition_#ID#_Off)</CODE_POS_4>
+							<STATE0_TEST>(B:ENGINE_Starter_Ignition_#ID#, number) #STATE_BOTH# ==</STATE0_TEST>
+							<STATE1_TEST>(B:ENGINE_Starter_Ignition_#ID#, number) #STATE_R# ==</STATE1_TEST>
+							<STATE2_TEST>(B:ENGINE_Starter_Ignition_#ID#, number) #STATE_L# ==</STATE2_TEST>
+							<STATE3_TEST>(B:ENGINE_Starter_Ignition_#ID#, number) #STATE_IGNOFF# ==</STATE3_TEST>
+							<STATE4_TEST>(B:ENGINE_Starter_Ignition_#ID#, number) #STATE_ALLOFF# == </STATE4_TEST>
+						</Case>
+						<Case Value="AS01B">
+							<TEMPLATE_TO_CALL>ASOBO_GT_Switch_2States</TEMPLATE_TO_CALL>
+							<SWITCH_DIRECTION>Horizontal</SWITCH_DIRECTION>
+							<ARROW_TYPE>Curved</ARROW_TYPE>
+							<CODE_POS_0>(&gt;B:ENGINE_Starter_#ID#_On)</CODE_POS_0>
+							<CODE_POS_1>(&gt;B:ENGINE_Starter_#ID#_Off)</CODE_POS_1>
+							<STARTER_ON_SIMVAR>GENERAL ENG STARTER</STARTER_ON_SIMVAR>
+							<STATE0_TEST>(B:ENGINE_Starter_#ID#, Bool) </STATE0_TEST>
+							<STATE1_TEST>(B:ENGINE_Starter_#ID#, Bool) ! </STATE1_TEST>
+							<UPDATE_CODE>
+								(A:TURB ENG IGNITION SWITCH EX1:#ID#, enum) 1 != if{
+								1 (&gt;K:TURBINE_IGNITION_SWITCH_SET#ID#)
+								}
+							</UPDATE_CODE>
+						</Case>
+						<Case Value="2Values_StarterIgnition">
+							<STARTER_TYPE>STARTER_IGNITION</STARTER_TYPE>
+							<IGNITION_TYPE>START_OFF</IGNITION_TYPE>
+							<TEMPLATE_TO_CALL>ASOBO_GT_Switch_Code</TEMPLATE_TO_CALL>
+							<LEFT_SINGLE_CODE>
+								(B:ENGINE_Starter_Ignition_#ID#, number) #STATE_START# == if{
+								(* Off *) (&gt;B:ENGINE_Starter_Ignition_#ID#_Off)
+								} els{
+								(* Starter *) (&gt;B:ENGINE_Starter_Ignition_#ID#_Start)
+								}
+							</LEFT_SINGLE_CODE>
+							<ANIM_CODE>(B:ENGINE_Starter_Ignition_#ID#, number) #STATE_START# == 100 *</ANIM_CODE>
+							<WWISE_EVENT_1>engine_starter_switch_on</WWISE_EVENT_1>
+							<WWISE_EVENT_2>engine_starter_switch_off</WWISE_EVENT_2>
+						</Case>
+						<Case Value="3Values_StarterIgnition">
+							<STARTER_TYPE>STARTER_IGNITION</STARTER_TYPE>
+							<IGNITION_TYPE>OFF_START_MOTOR</IGNITION_TYPE>
+							<TEMPLATE_TO_CALL>ASOBO_GT_Switch_3States</TEMPLATE_TO_CALL>
+							<CODE_POS_1>(* Off *) (&gt;B:ENGINE_Starter_Ignition_#ID#_Off)</CODE_POS_1>
+							<CODE_POS_2>(* Starter *) (&gt;B:ENGINE_Starter_Ignition_#ID#_Start)</CODE_POS_2>
+							<CODE_POS_3>(* Motor *) (&gt;B:ENGINE_Starter_Ignition_#ID#_Motor)</CODE_POS_3>
+							<STATE0_TEST>(B:ENGINE_Starter_Ignition_#ID#, number) #STATE_OFF# == </STATE0_TEST>
+							<STATE1_TEST>(B:ENGINE_Starter_Ignition_#ID#, number) #STATE_START# ==</STATE1_TEST>
+							<STATE2_TEST>(B:ENGINE_Starter_Ignition_#ID#, number) #STATE_MOTOR# ==</STATE2_TEST>
+						</Case>
+						<Case Value="ON_OFF_ABORT">
+							<WWISE_PREFIX>engine_starter</WWISE_PREFIX>
+							<MOMENTARY_SWITCH/>
+							<STATE_MAX_TIMER>#MOMENTARY_MIN_DURATION#</STATE_MAX_TIMER>
+							<STATE0_TIMER>#MOMENTARY_MIN_DURATION#</STATE0_TIMER>
+							<NUM_STATES>3</NUM_STATES>
+							<STR_STATE_#POS_ON#>On</STR_STATE_#POS_ON#>
+							<STR_STATE_#POS_OFF#>Off</STR_STATE_#POS_OFF#>
+							<STR_STATE_#POS_ABORT#>Abort</STR_STATE_#POS_ABORT#>
+							<SET_STATE_#POS_ON#>(A:GENERAL ENG STARTER:#ID#, Bool) ! if{ 1 (&gt;K:SET_STARTER#ID#_HELD)  } 0 (&gt;O:_Abort)</SET_STATE_#POS_ON#>
+							<SET_STATE_#POS_OFF#>(A:GENERAL ENG STARTER:#ID#, Bool) if{ 0 (&gt;K:SET_STARTER#ID#_HELD) } 0 (&gt;O:_Abort)</SET_STATE_#POS_OFF#>
+							<SET_STATE_#POS_ABORT#>(A:GENERAL ENG STARTER:#ID#, Bool) if{ 0 (&gt;K:SET_STARTER#ID#_HELD) } 1 (&gt;O:_Abort)</SET_STATE_#POS_ABORT#>
+							<TT_VALUE_#POS_ON#>@TT_Package.GT_STATE_ON</TT_VALUE_#POS_ON#>
+							<TT_VALUE_#POS_OFF#>@TT_Package.GT_STATE_OFF</TT_VALUE_#POS_OFF#>
+							<TT_VALUE_#POS_ABORT#>@TT_Package.GT_STATE_ABORT</TT_VALUE_#POS_ABORT#>
+							<GET_STATE_EXTERNAL>(A:GENERAL ENG STARTER:#ID#, Bool) sp0 (O:_Abort) sp1</GET_STATE_EXTERNAL>
+							<ENUM_VAL_TO_POS_EXTERNAL>l0 if{ #POS_ON# sp2 } els{ #POS_ABORT# #POS_OFF# (O:_Abort) ? sp2 } l2</ENUM_VAL_TO_POS_EXTERNAL>
+							<SIMVAR_TO_WATCH_0>GENERAL ENG STARTER:#ID#</SIMVAR_TO_WATCH_0>
+						</Case>
+						<Case Value="AS04F">
+							<TEMPLATE_TO_CALL>ASOBO_GT_Switch_3States</TEMPLATE_TO_CALL>
+							<STARTER_TYPE>STARTER_IGNITION</STARTER_TYPE>
+							<IGNITION_TYPE>ENG1_OFF_ENG2</IGNITION_TYPE>
+							<CODE_POS_0>(&gt;B:ENGINE_Starter_Ignition_#ID#_Eng1)</CODE_POS_0>
+							<CODE_POS_1>(&gt;B:ENGINE_Starter_Ignition_#ID#_Off)</CODE_POS_1>
+							<CODE_POS_2>(&gt;B:ENGINE_Starter_Ignition_#ID#_Eng2)</CODE_POS_2>
+							<STATE0_TEST>(A:GENERAL ENG STARTER:1, Bool)</STATE0_TEST>
+							<STATE1_TEST>(A:GENERAL ENG STARTER:1, Bool) ! (A:GENERAL ENG STARTER:2, Bool) ! and</STATE1_TEST>
+							<STATE2_TEST>(A:GENERAL ENG STARTER:2, Bool)</STATE2_TEST>
+						</Case>
+						<Default>
+							<TEMPLATE_TO_CALL>ASOBO_GT_Switch_Code</TEMPLATE_TO_CALL>
+							<LEFT_SINGLE_CODE>(&gt;B:ENGINE_Starter_#ID#_Toggle)</LEFT_SINGLE_CODE>
+							<ANIM_CODE>(B:ENGINE_Starter_#ID#, Bool) 100 *</ANIM_CODE>
+						</Default>
+					</Switch>
+				</Case>
+				<Case Value="Push">
+					<LEFT_SINGLE_CODE>(&gt;B:ENGINE_Starter_#ID#_Toggle)</LEFT_SINGLE_CODE>
+					<Condition Valid="AIRLINER">
+						<True>
+							<TEMPLATE_TO_CALL>ASOBO_GT_Push_Button_Airliner</TEMPLATE_TO_CALL>
+						</True>
+						<False>
+							<TEMPLATE_TO_CALL>ASOBO_GT_Push_Button</TEMPLATE_TO_CALL>
+						</False>
+					</Condition>
+				</Case>
+			</Switch>
+		</Parameters>
+		<Parameters Type="Default">
+			<TOOLTIP_TITLE>@TT_Package.ENGINE_STARTER_TITLE</TOOLTIP_TITLE>
+			<Switch Param="STARTER_TYPE">
+				<Case Value="STARTER_IGNITION">
+					<TOOLTIP_ENTRY_0>ENGINE_Starter_Ignition_#ID#</TOOLTIP_ENTRY_0>
+				</Case>
+				<Default>
+					<TOOLTIP_ENTRY_0>ENGINE_Starter_#ID#</TOOLTIP_ENTRY_0>
+				</Default>
+			</Switch>
+		</Parameters>
+		<Switch Param="TYPE">
+			<Case Value="ON_OFF_ABORT">
+				<UseTemplate Name="ASOBO_ENGINE_Base_Template">
+					<IE_NAME>Starter_#ID#</IE_NAME>
+				</UseTemplate>
+			</Case>
+			<Default>
+				<Component ID="#NODE_ID#" Node="#NODE_ID#">
+					<UseInputEvent ID="ENGINE">
+						<Switch Param="STARTER_TYPE">
+							<Case Value="STARTER_IGNITION">
+								<STARTER_IGNITER_ID>#ID#</STARTER_IGNITER_ID>
+							</Case>
+							<Default>
+								<STARTER_ID>#ID#</STARTER_ID>
+							</Default>
+						</Switch>
+					</UseInputEvent>
+					<UseTemplate Name="#TEMPLATE_TO_CALL#"/>
+					<Condition Check="UPDATE_CODE">
+						<True>
+							<UseTemplate Name="ASOBO_GT_Update">
+								<FREQUENCY>1</FREQUENCY>
+							</UseTemplate>
+						</True>
+					</Condition>
+				</Component>
+			</Default>
+		</Switch>
+	</Template>
+
+</ModelBehaviors>

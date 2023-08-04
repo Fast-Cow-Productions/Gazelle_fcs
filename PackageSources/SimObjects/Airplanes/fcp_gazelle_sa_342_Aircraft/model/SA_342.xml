@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModelInfo guid="{884d050f-9f5b-49c3-b641-2c8a1513cfbc}" version="1.1">
+	<LODS>
+		<LOD minSize="50" ModelFile="SA_342_lod00.gltf"/>
+	</LODS>
+<Behaviors>
+	<Include ModelBehaviorFile="Asobo\AircraftTypes\Rotorcrafts.xml"/>
+	<Include ModelBehaviorFile="Asobo\Common.xml"/>
+	<Include ModelBehaviorFile="Asobo\Generic.xml"/>
+	<Include ModelBehaviorFile="Asobo\Exterior.xml"/>
+	<Include ModelBehaviorFile="Asobo\Generic\FX.xml"/>
+
+    <!-- ///////////////////////////////////////////// main rotor //////////////////////////////////////////////-->
+
+	<Component ID="ROTORS">
+		<Component ID="Main_Rotor">
+			<Parameters Type="Default">
+				<ID>1</ID>
+				<ROTOR_ID>1</ROTOR_ID>
+				<MIN_RPM_FOR_BLUR>60</MIN_RPM_FOR_BLUR>
+				<MIN_RPM_FOR_BLUR2>200</MIN_RPM_FOR_BLUR2>
+			</Parameters>
+			<Loop>
+				<Setup>
+					<Param>STATEID</Param>
+					<From>1</From>
+					<Inc>1</Inc>
+					<To>1</To>
+					<To>1</To>
+				</Setup>
+				<Do>
+					<Parameters Type="Override">
+						<Switch Param="STATEID">
+							<Case Value="1">
+								<STATE>STILL</STATE>
+							</Case>
+							<Case Value="2">
+								<STATE>SLOW</STATE>
+							</Case>
+							<Case Value="3">
+								<STATE>BLURRED</STATE>
+							</Case>
+						</Switch>
+					</Parameters>
+					<Loop>
+						<Setup>
+							<Param>BLADEID</Param>
+							<From>1</From>
+							<Inc>1</Inc>
+							<To>3</To>
+						</Setup>
+						<Do>
+							<Condition Check="STATEID" Match="1">
+								<True>
+									<UseTemplate Name="ASOBO_ROTORCRAFT_Rotor_Blade_Visibility_Base_Template">
+										<NODE_ID>Livery_Decal_Main_Blade_0#BLADEID#_Still</NODE_ID>
+									</UseTemplate>
+								</True>
+							</Condition>
+							<UseTemplate Name="ASOBO_ROTORCRAFT_Rotor_Blade_Visibility_Base_Template">
+								<ID>0#BLADEID#</ID>
+							</UseTemplate>
+						</Do>
+					</Loop>
+				</Do>
+			</Loop>
+			<UseTemplate Name="ASOBO_ROTORCRAFT_Rotor_Blade_Visibility_Base_Template">
+				<NODE_ID>PROP1_BLURRED</NODE_ID>
+				<STATE>BLURRED</STATE>
+			</UseTemplate>
+			<UseTemplate Name="ASOBO_ROTORCRAFT_Rotor_Blade_Visibility_Base_Template">
+				<NODE_ID>PROP1_SIDE_BLUR</NODE_ID>
+				<STATE>BLURRED</STATE>
+			</UseTemplate>
+			<UseTemplate Name="ASOBO_ROTORCRAFT_Rotor_Blade_Visibility_Base_Template">
+				<NODE_ID>CENTER_PROP1_SLOW</NODE_ID>
+				<STATE>SLOW</STATE>
+			</UseTemplate>
+			<UseTemplate Name="ASOBO_ROTORCRAFT_Rotor_Blade_Visibility_Base_Template">
+				<NODE_ID>Livery_Decal_Main_Blade</NODE_ID>
+				<STATE>STILL</STATE>
+			</UseTemplate>
+			<UseTemplate Name="ASOBO_ROTORCRAFT_Rotor_Rotation_Template">
+				<ANIM_NAME>prop_1</ANIM_NAME>
+			</UseTemplate>
+			<UseTemplate Name="ASOBO_ROTORCRAFT_Swashplate_Template">
+				<ANIM_NAME>Switch_Swashplate</ANIM_NAME>
+			</UseTemplate>
+			<UseTemplate Name="ASOBO_ROTORCRAFT_Disk_Coning_Template">
+				<ANIM_NAME>Coning</ANIM_NAME>
+			</UseTemplate>
+		</Component>
+	</Component >
+
+
+<!-- ///////////////////////////////////////////// tail rotor //////////////////////////////////////////////-->
+
+    <Component ID="Tailotor_Rotation">
+      <UseTemplate Name="ASOBO_GT_Update">
+        <FREQUENCY>1</FREQUENCY>
+        <UPDATE_CODE>
+          (A:ROTOR RPM PCT:2, percent) 30 &lt; if{
+              41.5 (&gt;O:mltp_tl_rotor)
+          } els{
+              12 (&gt;O:mltp_tl_rotor)
+          }
+        </UPDATE_CODE>
+      </UseTemplate>
+      <UseTemplate Name="ASOBO_GT_Anim">
+        <ANIM_NAME>tail_rotor_rotation</ANIM_NAME>
+        <ANIM_CODE>(A:ROTOR RPM PCT:2, percent) (A:ANIMATION DELTA TIME, seconds) * (O:mltp_tl_rotor) *</ANIM_CODE>
+        <ANIM_LENGTH>100</ANIM_LENGTH>
+        <ANIM_WRAP>1</ANIM_WRAP>
+        <ANIM_DELTA>1</ANIM_DELTA>
+        <NODE_ID>Heli_Rotor_01</NODE_ID>
+      </UseTemplate>
+    </Component>
+
+		<Component ID="Tailrotor_Pitch_Blade1">
+			<UseTemplate Name="ASOBO_GT_Anim_Code">
+				<ANIM_NAME>tail_rotor_pitch</ANIM_NAME>
+				<ANIM_CODE>(A:TAIL ROTOR PEDAL POSITION,percent) 30 + 2 /</ANIM_CODE>
+				<ANIM_LENGTH>30</ANIM_LENGTH>
+				<NODE_ID>rotor_tail_blade1</NODE_ID>
+			</UseTemplate>
+		</Component>
+
+    <Component ID="Tailrotor_Pitch_Blade2">
+      <UseTemplate Name="ASOBO_GT_Anim_Code">
+        <ANIM_NAME>tail_rotor_pitch</ANIM_NAME>
+        <ANIM_CODE>(A:TAIL ROTOR PEDAL POSITION,percent) 30 + 2 /</ANIM_CODE>
+        <ANIM_LENGTH>30</ANIM_LENGTH>
+        <NODE_ID>rotor_tail_blade2</NODE_ID>
+      </UseTemplate>
+    </Component>
+
+    <Component ID="Tailrotor_Pitch_Blade3">
+      <UseTemplate Name="ASOBO_GT_Anim_Code">
+        <ANIM_NAME>tail_rotor_pitch</ANIM_NAME>
+        <ANIM_CODE>(A:TAIL ROTOR PEDAL POSITION,percent) 30 + 2 /</ANIM_CODE>
+        <ANIM_LENGTH>30</ANIM_LENGTH>
+        <NODE_ID>rotor_tail_blade3</NODE_ID>
+      </UseTemplate>
+    </Component>
+
+    <Component ID="Tailrotor_Pitch_Blade4">
+      <UseTemplate Name="ASOBO_GT_Anim_Code">
+        <ANIM_NAME>tail_rotor_pitch</ANIM_NAME>
+        <ANIM_CODE>(A:TAIL ROTOR PEDAL POSITION,percent) 30 + 2 /</ANIM_CODE>
+        <ANIM_LENGTH>30</ANIM_LENGTH>
+        <NODE_ID>rotor_tail_blade4</NODE_ID>
+      </UseTemplate>
+    </Component>
+
+    <Component ID="Tailrotor_Pitch_Blade5">
+      <UseTemplate Name="ASOBO_GT_Anim_Code">
+        <ANIM_NAME>tail_rotor_pitch</ANIM_NAME>
+        <ANIM_CODE>(A:TAIL ROTOR PEDAL POSITION,percent) 30 + 2 /</ANIM_CODE>
+        <ANIM_LENGTH>30</ANIM_LENGTH>
+        <NODE_ID>rotor_tail_blade5</NODE_ID>
+      </UseTemplate>
+    </Component>
+
+    <Component ID="Tailrotor_Pitch_Blade6">
+      <UseTemplate Name="ASOBO_GT_Anim_Code">
+        <ANIM_NAME>tail_rotor_pitch</ANIM_NAME>
+        <ANIM_CODE>(A:TAIL ROTOR PEDAL POSITION,percent) 30 + 2 /</ANIM_CODE>
+        <ANIM_LENGTH>30</ANIM_LENGTH>
+        <NODE_ID>rotor_tail_blade6</NODE_ID>
+      </UseTemplate>
+    </Component>
+
+    <Component ID="Tailrotor_Pitch_Blade7">
+      <UseTemplate Name="ASOBO_GT_Anim_Code">
+        <ANIM_NAME>tail_rotor_pitch</ANIM_NAME>
+        <ANIM_CODE>(A:TAIL ROTOR PEDAL POSITION,percent) 30 + 2 /</ANIM_CODE>
+        <ANIM_LENGTH>30</ANIM_LENGTH>
+        <NODE_ID>rotor_tail_blade7</NODE_ID>
+      </UseTemplate>
+    </Component>
+
+    <Component ID="Tailrotor_Pitch_Blade8">
+      <UseTemplate Name="ASOBO_GT_Anim_Code">
+        <ANIM_NAME>tail_rotor_pitch</ANIM_NAME>
+        <ANIM_CODE>(A:TAIL ROTOR PEDAL POSITION,percent) 30 + 2 /</ANIM_CODE>
+        <ANIM_LENGTH>30</ANIM_LENGTH>
+        <NODE_ID>rotor_tail_blade8</NODE_ID>
+      </UseTemplate>
+    </Component>
+
+    <Component ID="Tailrotor_Pitch_Blade9">
+      <UseTemplate Name="ASOBO_GT_Anim_Code">
+        <ANIM_NAME>tail_rotor_pitch</ANIM_NAME>
+        <ANIM_CODE>(A:TAIL ROTOR PEDAL POSITION,percent) 30 + 2 /</ANIM_CODE>
+        <ANIM_LENGTH>30</ANIM_LENGTH>
+        <NODE_ID>rotor_tail_blade9</NODE_ID>
+      </UseTemplate>
+    </Component>
+
+    <Component ID="Tailrotor_Pitch_Blade10">
+      <UseTemplate Name="ASOBO_GT_Anim_Code">
+        <ANIM_NAME>tail_rotor_pitch</ANIM_NAME>
+        <ANIM_CODE>(A:TAIL ROTOR PEDAL POSITION,percent) 30 + 2 /</ANIM_CODE>
+        <ANIM_LENGTH>30</ANIM_LENGTH>
+        <NODE_ID>rotor_tail_blade10</NODE_ID>
+      </UseTemplate>
+    </Component>
+
+    <Component ID="Tailrotor_Pitch_Blade11">
+      <UseTemplate Name="ASOBO_GT_Anim_Code">
+        <ANIM_NAME>tail_rotor_pitch</ANIM_NAME>
+        <ANIM_CODE>(A:TAIL ROTOR PEDAL POSITION,percent) 30 + 2 /</ANIM_CODE>
+        <ANIM_LENGTH>30</ANIM_LENGTH>
+        <NODE_ID>rotor_tail_blade11</NODE_ID>
+      </UseTemplate>
+    </Component>
+
+    <Component ID="Tailrotor_Pitch_Blade12">
+      <UseTemplate Name="ASOBO_GT_Anim_Code">
+        <ANIM_NAME>tail_rotor_pitch</ANIM_NAME>
+        <ANIM_CODE>(A:TAIL ROTOR PEDAL POSITION,percent) 30 + 2 /</ANIM_CODE>
+        <ANIM_LENGTH>30</ANIM_LENGTH>
+        <NODE_ID>rotor_tail_blade12</NODE_ID>
+      </UseTemplate>
+    </Component>
+
+    <Component ID="Tailrotor_Pitch_Blade13">
+      <UseTemplate Name="ASOBO_GT_Anim_Code">
+        <ANIM_NAME>tail_rotor_pitch</ANIM_NAME>
+        <ANIM_CODE>(A:TAIL ROTOR PEDAL POSITION,percent) 30 + 2 /</ANIM_CODE>
+        <ANIM_LENGTH>30</ANIM_LENGTH>
+        <NODE_ID>rotor_tail_blade13</NODE_ID>
+      </UseTemplate>
+    </Component>
+
+	<!--Multiplayer Friendly Tail-->
+	<Component ID="tail_rotor_still" Node="tail_rotor_still">
+		<UseTemplate Name="ASOBO_GT_Visibility_Code">
+			<VISIBILITY_CODE>(A:ROTOR RPM:1, rpm) 103 &lt; if{ 1 } els{ 0 }</VISIBILITY_CODE>
+		</UseTemplate>
+	</Component>
+
+	<Component ID="tail_rotor_slow" Node="tail_rotor_slow">
+		<UseTemplate Name="ASOBO_GT_Visibility_Code">
+			<VISIBILITY_CODE>
+				(A:ROTOR RPM:2, rpm) 62 &gt;
+				if{
+				(A:ROTOR RPM:2, rpm) 186 &lt; if{ 1 } els{ 0 }
+				} els{ 0 }
+			</VISIBILITY_CODE>
+		</UseTemplate>
+	</Component>
+
+	<Component ID="tail_rotor_blurred" Node="tail_rotor_blurred">
+		<UseTemplate Name="ASOBO_GT_Visibility_Code">
+			<VISIBILITY_CODE>(A:ROTOR RPM:2, rpm) 147 &gt; if{ 1 } els{ 0 }</VISIBILITY_CODE>
+		</UseTemplate>
+	</Component>
+
+	<!-- Interactive Points##################################### -->
+	
+	<Component ID="INTERACTIVE_POINTS">
+		<UseTemplate Name="ASOBO_FuelHose_InteractivePoint_Template">
+			<ID>6</ID>
+			<NODE_ID>GROUND_FUELPIPE</NODE_ID>
+		</UseTemplate>
+	</Component>
+	
+	<!-- HANGER EQUPMENT#########################-->
+
+	<Component ID="HANGAR_ONLY">
+		<!-- Currently not exported in GLTF -->
+		<UseTemplate Name="ASOBO_HANGAR_Visibility_Template">
+			<NODE_ID>R_Wing_1</NODE_ID>
+		</UseTemplate>
+		<UseTemplate Name="ASOBO_HANGAR_Visibility_Template">
+			<NODE_ID>R_Wing_2</NODE_ID>
+		</UseTemplate>
+		<UseTemplate Name="ASOBO_HANGAR_Visibility_Template">
+			<NODE_ID>R_Wing_3</NODE_ID>
+		</UseTemplate>
+		<UseTemplate Name="ASOBO_HANGAR_Visibility_Template">
+			<NODE_ID>R_Wing_4</NODE_ID>
+		</UseTemplate>
+	</Component>
+	
+	<!-- Landing Effects#############################-->
+	<Component ID="LANDING_FX">
+		<UseTemplate Name="ASOBO_LANDING_CP_FX"/>
+	</Component>
+	
+	<Component ID="LANDING_FX_2">
+		<UseTemplate Name="ASOBO_WATER_CP_LANDING_FX">
+			<FX_CONTACT_POINT_ID>0</FX_CONTACT_POINT_ID>
+		</UseTemplate>
+		<UseTemplate Name="ASOBO_WATER_CP_LANDING_FX">
+			<FX_CONTACT_POINT_ID>1</FX_CONTACT_POINT_ID>
+		</UseTemplate>
+		<UseTemplate Name="ASOBO_WATER_CP_LANDING_FX">
+			<FX_CONTACT_POINT_ID>2</FX_CONTACT_POINT_ID>
+		</UseTemplate>
+		<UseTemplate Name="ASOBO_WATER_CP_LANDING_FX">
+			<FX_CONTACT_POINT_ID>3</FX_CONTACT_POINT_ID>
+		</UseTemplate>
+
+		<UseTemplate Name="ASOBO_WET_CP_LANDING_FX">
+			<FX_CONTACT_POINT_ID>0</FX_CONTACT_POINT_ID>
+		</UseTemplate>
+		<UseTemplate Name="ASOBO_WET_CP_LANDING_FX">
+			<FX_CONTACT_POINT_ID>1</FX_CONTACT_POINT_ID>
+		</UseTemplate>
+		<UseTemplate Name="ASOBO_WET_CP_LANDING_FX">
+			<FX_CONTACT_POINT_ID>2</FX_CONTACT_POINT_ID>
+		</UseTemplate>
+		<UseTemplate Name="ASOBO_WET_CP_LANDING_FX">
+			<FX_CONTACT_POINT_ID>3</FX_CONTACT_POINT_ID>
+		</UseTemplate>
+
+		<UseTemplate Name="ASOBO_SMOKE_CP_LANDING_FX">
+			<FX_CONTACT_POINT_ID>0</FX_CONTACT_POINT_ID>
+		</UseTemplate>
+		<UseTemplate Name="ASOBO_SMOKE_CP_LANDING_FX">
+			<FX_CONTACT_POINT_ID>1</FX_CONTACT_POINT_ID>
+		</UseTemplate>
+		<UseTemplate Name="ASOBO_SMOKE_CP_LANDING_FX">
+			<FX_CONTACT_POINT_ID>2</FX_CONTACT_POINT_ID>
+		</UseTemplate>
+		<UseTemplate Name="ASOBO_SMOKE_CP_LANDING_FX">
+			<FX_CONTACT_POINT_ID>3</FX_CONTACT_POINT_ID>
+		</UseTemplate>
+
+		<UseTemplate Name="ASOBO_DUST_CP_LANDING_FX">
+			<FX_CONTACT_POINT_ID>0</FX_CONTACT_POINT_ID>
+		</UseTemplate>
+		<UseTemplate Name="ASOBO_DUST_CP_LANDING_FX">
+			<FX_CONTACT_POINT_ID>1</FX_CONTACT_POINT_ID>
+		</UseTemplate>
+		<UseTemplate Name="ASOBO_DUST_CP_LANDING_FX">
+			<FX_CONTACT_POINT_ID>2</FX_CONTACT_POINT_ID>
+		</UseTemplate>
+		<UseTemplate Name="ASOBO_DUST_CP_LANDING_FX">
+			<FX_CONTACT_POINT_ID>3</FX_CONTACT_POINT_ID>
+		</UseTemplate>
+
+		<UseTemplate Name="ASOBO_GRASS_CP_LANDING_FX">
+			<FX_CONTACT_POINT_ID>0</FX_CONTACT_POINT_ID>
+		</UseTemplate>
+		<UseTemplate Name="ASOBO_GRASS_CP_LANDING_FX">
+			<FX_CONTACT_POINT_ID>1</FX_CONTACT_POINT_ID>
+		</UseTemplate>
+		<UseTemplate Name="ASOBO_GRASS_CP_LANDING_FX">
+			<FX_CONTACT_POINT_ID>2</FX_CONTACT_POINT_ID>
+		</UseTemplate>
+		<UseTemplate Name="ASOBO_GRASS_CP_LANDING_FX">
+			<FX_CONTACT_POINT_ID>3</FX_CONTACT_POINT_ID>
+		</UseTemplate>
+
+		<UseTemplate Name="ASOBO_SNOW_CP_LANDING_FX">
+			<FX_CONTACT_POINT_ID>0</FX_CONTACT_POINT_ID>
+		</UseTemplate>
+		<UseTemplate Name="ASOBO_SNOW_CP_LANDING_FX">
+			<FX_CONTACT_POINT_ID>1</FX_CONTACT_POINT_ID>
+		</UseTemplate>
+		<UseTemplate Name="ASOBO_SNOW_CP_LANDING_FX">
+			<FX_CONTACT_POINT_ID>2</FX_CONTACT_POINT_ID>
+		</UseTemplate>
+		<UseTemplate Name="ASOBO_SNOW_CP_LANDING_FX">
+			<FX_CONTACT_POINT_ID>3</FX_CONTACT_POINT_ID>
+		</UseTemplate>
+		
+		<UseTemplate Name="ASOBO_FX_EXHAUST_HEAT">
+			<FX_GUID>{605EBB42-DA6B-4965-9199-9AE59BF7FD83}</FX_GUID>
+			<FX_NODE>FX_EXHAUST</FX_NODE>
+			<FX_CODE>(A:GENERAL ENG COMBUSTION:1, Bool) 0 &gt;</FX_CODE>
+		</UseTemplate>
+		<UseTemplate Name="ASOBO_FX_EXHAUST_HEAT">
+			<FX_GUID>{605EBB42-DA6B-4965-9199-9AE59BF7FD83}</FX_GUID>
+			<FX_NODE>FX_EXHAUST_2</FX_NODE>
+			<FX_CODE>(A:GENERAL ENG COMBUSTION:1, Bool) 0 &gt;</FX_CODE>
+		</UseTemplate>
+	</Component>
+	<Component ID="FX_LANDING_CP_WET_weland-5_0"  Node="weland-5">
+		<UseTemplate Name="ASOBO_GT_FX">
+			<FX_GUID>{35943419-2F02-41B4-BB27-37811ADC32CE}</FX_GUID>
+			<FX_NODE>FX_WETLAND</FX_NODE>
+			<FX_CODE>(A:CONTACT POINT IS ON GROUND:0, Keyframe) 0 &gt; (A:GROUND VELOCITY, knot) 0.1 &gt; and (A:SURFACE CONDITION, enum) 1 == and</FX_CODE>
+		</UseTemplate>
+	</Component>
+	</Behaviors>
+
+</ModelInfo>

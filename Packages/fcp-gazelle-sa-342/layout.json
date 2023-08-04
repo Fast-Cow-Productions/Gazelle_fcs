@@ -1,0 +1,3539 @@
+{
+  "content": [
+    {
+      "path": "ContentInfo/fcp-gazelle-sa-342/Thumbnail.jpg",
+      "size": 34186,
+      "date": 133161437190753997
+    },
+    {
+      "path": "Data/entypo.ttf",
+      "size": 35392,
+      "date": 133161437193306400
+    },
+    {
+      "path": "Data/images.txt",
+      "size": 868,
+      "date": 133161437193459576
+    },
+    {
+      "path": "Data/images/image1.jpg",
+      "size": 25760,
+      "date": 133161437194716063
+    },
+    {
+      "path": "Data/images/image10.jpg",
+      "size": 3439,
+      "date": 133161437194822186
+    },
+    {
+      "path": "Data/images/image11.jpg",
+      "size": 3818,
+      "date": 133161437194942477
+    },
+    {
+      "path": "Data/images/image12.jpg",
+      "size": 5452,
+      "date": 133161437195047679
+    },
+    {
+      "path": "Data/images/image2.jpg",
+      "size": 24091,
+      "date": 133161437195176097
+    },
+    {
+      "path": "Data/images/image3.jpg",
+      "size": 29282,
+      "date": 133161437195287240
+    },
+    {
+      "path": "Data/images/image4.jpg",
+      "size": 23830,
+      "date": 133161437195402916
+    },
+    {
+      "path": "Data/images/image5.jpg",
+      "size": 27131,
+      "date": 133161437195517988
+    },
+    {
+      "path": "Data/images/image6.jpg",
+      "size": 25116,
+      "date": 133161437195625899
+    },
+    {
+      "path": "Data/images/image7.jpg",
+      "size": 25590,
+      "date": 133161437195736703
+    },
+    {
+      "path": "Data/images/image8.jpg",
+      "size": 24607,
+      "date": 133161437195852618
+    },
+    {
+      "path": "Data/images/image9.jpg",
+      "size": 4035,
+      "date": 133161437195962781
+    },
+    {
+      "path": "Data/LICENSE_OFL.txt",
+      "size": 4393,
+      "date": 133161437193604692
+    },
+    {
+      "path": "Data/NotoEmoji-Regular.ttf",
+      "size": 418804,
+      "date": 133161437193795019
+    },
+    {
+      "path": "Data/Roboto-Bold.ttf",
+      "size": 135820,
+      "date": 133161437193950461
+    },
+    {
+      "path": "Data/Roboto-Light.ttf",
+      "size": 140276,
+      "date": 133161437194101639
+    },
+    {
+      "path": "Data/Roboto-Regular.ttf",
+      "size": 145348,
+      "date": 133161437194280643
+    },
+    {
+      "path": "Data/screenshot-01.png",
+      "size": 989424,
+      "date": 133161437194455945
+    },
+    {
+      "path": "Data/screenshot-02.png",
+      "size": 229443,
+      "date": 133161437194591082
+    },
+    {
+      "path": "effects/fx_LED((.fx",
+      "size": 1269,
+      "date": 132988654387352321
+    },
+    {
+      "path": "effects/LIGHT_ASOBO_BeaconBelly.fx",
+      "size": 4653,
+      "date": 132988654387501879
+    },
+    {
+      "path": "effects/LIGHT_ASOBO_BeaconBellyOmni.fx",
+      "size": 4655,
+      "date": 132988654387671290
+    },
+    {
+      "path": "effects/LIGHT_ASOBO_BeaconBellyup.fx",
+      "size": 1992,
+      "date": 132988654387820806
+    },
+    {
+      "path": "effects/LIGHT_ASOBO_BeaconTop.fx",
+      "size": 4663,
+      "date": 132988654387950369
+    },
+    {
+      "path": "effects/LIGHT_ASOBO_BeaconTopdown.fx",
+      "size": 1226,
+      "date": 132988654388059961
+    },
+    {
+      "path": "effects/LIGHT_ASOBO_Landing+.fx",
+      "size": 1241,
+      "date": 132988654388379522
+    },
+    {
+      "path": "effects/LIGHT_ASOBO_Landing.fx",
+      "size": 4659,
+      "date": 132988654388229443
+    },
+    {
+      "path": "effects/LIGHT_ASOBO_LandingBelly+.fx",
+      "size": 1247,
+      "date": 132988654388687871
+    },
+    {
+      "path": "effects/LIGHT_ASOBO_LandingBelly.fx",
+      "size": 4687,
+      "date": 132988654388528398
+    },
+    {
+      "path": "effects/LIGHT_ASOBO_LandingBellypulse+.fx",
+      "size": 1245,
+      "date": 132988654388986867
+    },
+    {
+      "path": "effects/LIGHT_ASOBO_LandingBellypulse.fx",
+      "size": 4679,
+      "date": 132988654388837361
+    },
+    {
+      "path": "effects/LIGHT_ASOBO_LandingLarge+.fx",
+      "size": 1289,
+      "date": 132988654389265961
+    },
+    {
+      "path": "effects/LIGHT_ASOBO_LandingLarge.fx",
+      "size": 4850,
+      "date": 132988654389156851
+    },
+    {
+      "path": "effects/LIGHT_ASOBO_LandingOld.fx",
+      "size": 4659,
+      "date": 132988654389365611
+    },
+    {
+      "path": "effects/LIGHT_ASOBO_LandingPulse.fx",
+      "size": 4631,
+      "date": 132988654389564938
+    },
+    {
+      "path": "effects/LIGHT_ASOBO_LogoLight.fx",
+      "size": 3662,
+      "date": 132988654389684570
+    },
+    {
+      "path": "effects/LIGHT_ASOBO_LogoLightLarge.fx",
+      "size": 3665,
+      "date": 132988654389774228
+    },
+    {
+      "path": "effects/LIGHT_ASOBO_NavigationGreen.fx",
+      "size": 3521,
+      "date": 132988654389963597
+    },
+    {
+      "path": "effects/LIGHT_ASOBO_NavigationRed.fx",
+      "size": 3496,
+      "date": 132988654390113155
+    },
+    {
+      "path": "effects/LIGHT_ASOBO_NavigationWhite.fx",
+      "size": 3876,
+      "date": 132988654390202831
+    },
+    {
+      "path": "effects/LIGHT_ASOBO_Recognition.fx",
+      "size": 4674,
+      "date": 132988654390392163
+    },
+    {
+      "path": "effects/LIGHT_ASOBO_StrobeBelly.fx",
+      "size": 3529,
+      "date": 132988654390551624
+    },
+    {
+      "path": "effects/LIGHT_ASOBO_StrobeDouble.fx",
+      "size": 7325,
+      "date": 132988654390651331
+    },
+    {
+      "path": "effects/LIGHT_ASOBO_StrobeSimple.fx",
+      "size": 3525,
+      "date": 132988654390790835
+    },
+    {
+      "path": "effects/LIGHT_ASOBO_StrobeTop.fx",
+      "size": 3539,
+      "date": 132988654390950331
+    },
+    {
+      "path": "effects/LIGHT_ASOBO_Taxi.fx",
+      "size": 4573,
+      "date": 132988654391069930
+    },
+    {
+      "path": "effects/LIGHT_ASOBO_TaxiBelly+.fx",
+      "size": 1298,
+      "date": 132988654391368932
+    },
+    {
+      "path": "effects/LIGHT_ASOBO_TaxiBelly.fx",
+      "size": 4902,
+      "date": 132988654391199480
+    },
+    {
+      "path": "effects/LIGHT_ASOBO_TaxiLarge.fx",
+      "size": 4844,
+      "date": 132988654391478574
+    },
+    {
+      "path": "effects/LIGHT_ASOBO_TBM930_Pulse.fx",
+      "size": 4857,
+      "date": 132988654367967473
+    },
+    {
+      "path": "effects/LIGHT_ASOBO_Wing.FX",
+      "size": 3880,
+      "date": 132988654391657924
+    },
+    {
+      "path": "effects/LIGHT_ASOBO_WingLarge.FX",
+      "size": 3882,
+      "date": 132988654391817436
+    },
+    {
+      "path": "effects/LIGHT_C90_CabinOmni.fx",
+      "size": 1359,
+      "date": 133004293655748859
+    },
+    {
+      "path": "effects/LIGHT_CSMASTB7_BeaconBelly.fx",
+      "size": 4658,
+      "date": 132988654374958610
+    },
+    {
+      "path": "effects/LIGHT_CSMASTB7_BeaconTop.fx",
+      "size": 4672,
+      "date": 132988654375073851
+    },
+    {
+      "path": "effects/LIGHT_CSMASTB7_BeaconTopdown.fx",
+      "size": 1233,
+      "date": 132988654375293643
+    },
+    {
+      "path": "effects/LIGHT_CSMASTB7_LandingLarge+.fx",
+      "size": 1287,
+      "date": 132988654375545948
+    },
+    {
+      "path": "effects/LIGHT_CSMASTB7_LandingLarge.fx",
+      "size": 4848,
+      "date": 132988654375436091
+    },
+    {
+      "path": "effects/LIGHT_CSMASTB7_LogoLightLarge.fx",
+      "size": 3668,
+      "date": 132988654358828356
+    },
+    {
+      "path": "effects/LIGHT_CSMASTB7_NavigationGreen.fx",
+      "size": 3518,
+      "date": 132988654358998885
+    },
+    {
+      "path": "effects/LIGHT_CSMASTB7_NavigationRed.fx",
+      "size": 3497,
+      "date": 132988654359143368
+    },
+    {
+      "path": "effects/LIGHT_CSMASTB7_NavigationWhite.fx",
+      "size": 3877,
+      "date": 132988654359278354
+    },
+    {
+      "path": "effects/LIGHT_CSMASTB7_StrobeSimple.fx",
+      "size": 3531,
+      "date": 132988654359474387
+    },
+    {
+      "path": "effects/LIGHT_CSMASTB7_TaxiLarge.fx",
+      "size": 4843,
+      "date": 132988654359629420
+    },
+    {
+      "path": "effects/LIGHT_CSMASTB7_WingLarge.FX",
+      "size": 3884,
+      "date": 132988654359759386
+    },
+    {
+      "path": "effects/LIGHT_MSPC6_BeaconBelly.fx",
+      "size": 4661,
+      "date": 132988654359948893
+    },
+    {
+      "path": "effects/LIGHT_MSPC6_BeaconTop.fx",
+      "size": 4667,
+      "date": 132988654360079967
+    },
+    {
+      "path": "effects/LIGHT_Newlight_H135_Landing.fx",
+      "size": 4657,
+      "date": 132988654360199785
+    },
+    {
+      "path": "effects/LIGHT_Newlight_H135_Spotlight.fx",
+      "size": 4759,
+      "date": 132988654360374428
+    },
+    {
+      "path": "effects/LIGHT_Newlight_Landing icon5.fx",
+      "size": 4649,
+      "date": 132988654386587749
+    },
+    {
+      "path": "effects/LIGHT_Newlight_StrobeSimplegreen.fx",
+      "size": 4666,
+      "date": 132988654386677449
+    },
+    {
+      "path": "effects/LIGHT_Newlight_StrobeSimplered.fx",
+      "size": 4644,
+      "date": 132988654386856845
+    },
+    {
+      "path": "effects/LIGHT_Newlight_Taxi icon5.fx",
+      "size": 4551,
+      "date": 132988654387023400
+    },
+    {
+      "path": "effects/texture/flare.png",
+      "size": 38737,
+      "date": 132988648007439603
+    },
+    {
+      "path": "effects/texture/fx_flashlight.fx",
+      "size": 1374,
+      "date": 132988621446507241
+    },
+    {
+      "path": "effects/texture/fx_LED((.fx",
+      "size": 1269,
+      "date": 132988621446686611
+    },
+    {
+      "path": "effects/texture/LIGHT_A339_BeaconBelly.fx",
+      "size": 4648,
+      "date": 132988621446856054
+    },
+    {
+      "path": "effects/texture/LIGHT_A339_BeaconBellyup.fx",
+      "size": 1231,
+      "date": 132988621447015512
+    },
+    {
+      "path": "effects/texture/LIGHT_A339_BeaconTop.fx",
+      "size": 4662,
+      "date": 132988621447135112
+    },
+    {
+      "path": "effects/texture/LIGHT_A339_BeaconTopdown.fx",
+      "size": 1227,
+      "date": 132988621447244746
+    },
+    {
+      "path": "effects/texture/LIGHT_A339_Engine.FX",
+      "size": 3882,
+      "date": 132988621447374318
+    },
+    {
+      "path": "effects/texture/LIGHT_A339_LandingLarge+.fx",
+      "size": 1287,
+      "date": 132988621447733123
+    },
+    {
+      "path": "effects/texture/LIGHT_A339_LandingLarge.fx",
+      "size": 4850,
+      "date": 132988621447543746
+    },
+    {
+      "path": "effects/texture/LIGHT_A339_LogoLightLarge.fx",
+      "size": 3668,
+      "date": 132988621447893104
+    },
+    {
+      "path": "effects/texture/LIGHT_A339_NavigationGreen.fx",
+      "size": 3518,
+      "date": 132988621448062016
+    },
+    {
+      "path": "effects/texture/LIGHT_A339_NavigationRed.fx",
+      "size": 3497,
+      "date": 132988621448221483
+    },
+    {
+      "path": "effects/texture/LIGHT_A339_NavigationWhite.fx",
+      "size": 3877,
+      "date": 132988621448370986
+    },
+    {
+      "path": "effects/texture/LIGHT_A339_StrobeDouble.fx",
+      "size": 7323,
+      "date": 132988621448530446
+    },
+    {
+      "path": "effects/texture/LIGHT_A339_StrobeSimple.fx",
+      "size": 3524,
+      "date": 132988621448679963
+    },
+    {
+      "path": "effects/texture/LIGHT_A339_TaxiLarge.fx",
+      "size": 4841,
+      "date": 132988621448860196
+    },
+    {
+      "path": "effects/texture/LIGHT_A339_WingLarge.FX",
+      "size": 3882,
+      "date": 132988621448959015
+    },
+    {
+      "path": "effects/texture/LIGHT_AS-A320_NEO_BeaconBelly.fx",
+      "size": 4648,
+      "date": 132988621449059021
+    },
+    {
+      "path": "effects/texture/LIGHT_AS-A320_NEO_BeaconBellyup.fx",
+      "size": 1231,
+      "date": 132988621449188256
+    },
+    {
+      "path": "effects/texture/LIGHT_AS-A320_NEO_BeaconTop.fx",
+      "size": 4662,
+      "date": 132988621449327781
+    },
+    {
+      "path": "effects/texture/LIGHT_AS-A320_NEO_BeaconTopdown.fx",
+      "size": 1227,
+      "date": 132988621449427453
+    },
+    {
+      "path": "effects/texture/LIGHT_AS-A320_NEO_LandingLarge+.fx",
+      "size": 1287,
+      "date": 132988621449736418
+    },
+    {
+      "path": "effects/texture/LIGHT_AS-A320_NEO_LandingLarge.fx",
+      "size": 4850,
+      "date": 132988621449576955
+    },
+    {
+      "path": "effects/texture/LIGHT_AS-A320_NEO_LogoLightLarge.fx",
+      "size": 3667,
+      "date": 132988621449905850
+    },
+    {
+      "path": "effects/texture/LIGHT_AS-A320_NEO_NavigationGreen.fx",
+      "size": 3514,
+      "date": 132988621450065313
+    },
+    {
+      "path": "effects/texture/LIGHT_AS-A320_NEO_NavigationRed.fx",
+      "size": 3493,
+      "date": 132988621450174950
+    },
+    {
+      "path": "effects/texture/LIGHT_AS-A320_NEO_NavigationWhite.fx",
+      "size": 3873,
+      "date": 132988621450304516
+    },
+    {
+      "path": "effects/texture/LIGHT_AS-A320_NEO_StrobeDouble.fx",
+      "size": 7323,
+      "date": 132988621450444080
+    },
+    {
+      "path": "effects/texture/LIGHT_AS-A320_NEO_StrobeSimple.fx",
+      "size": 3524,
+      "date": 132988621450563697
+    },
+    {
+      "path": "effects/texture/LIGHT_AS-A320_NEO_TakeOff+.fx",
+      "size": 1287,
+      "date": 132988621450892548
+    },
+    {
+      "path": "effects/texture/LIGHT_AS-A320_NEO_TakeOff.fx",
+      "size": 4850,
+      "date": 132988621450733082
+    },
+    {
+      "path": "effects/texture/LIGHT_AS-A320_NEO_TaxiLarge.fx",
+      "size": 4841,
+      "date": 132988621451052024
+    },
+    {
+      "path": "effects/texture/LIGHT_AS-A320_NEO_WingLarge.FX",
+      "size": 3882,
+      "date": 132988621451181631
+    },
+    {
+      "path": "effects/texture/LIGHT_AS-B787-10_BeaconBelly.fx",
+      "size": 4632,
+      "date": 132988621451311147
+    },
+    {
+      "path": "effects/texture/LIGHT_AS-B787-10_BeaconBellyup.fx",
+      "size": 1224,
+      "date": 132988621451495617
+    },
+    {
+      "path": "effects/texture/LIGHT_AS-B787-10_BeaconTop.fx",
+      "size": 4646,
+      "date": 132988621451615209
+    },
+    {
+      "path": "effects/texture/LIGHT_AS-B787-10_BeaconTopdown.fx",
+      "size": 1220,
+      "date": 132988621451734809
+    },
+    {
+      "path": "effects/texture/LIGHT_AS-B787-10_LandingLarge+.fx",
+      "size": 1287,
+      "date": 132988621452043781
+    },
+    {
+      "path": "effects/texture/LIGHT_AS-B787-10_LandingLarge.fx",
+      "size": 4848,
+      "date": 132988621451914867
+    },
+    {
+      "path": "effects/texture/LIGHT_AS-B787-10_LogoLightLarge.fx",
+      "size": 3661,
+      "date": 132988621452193279
+    },
+    {
+      "path": "effects/texture/LIGHT_AS-B787-10_NavigationGreen.fx",
+      "size": 3518,
+      "date": 132988621452362715
+    },
+    {
+      "path": "effects/texture/LIGHT_AS-B787-10_NavigationRed.fx",
+      "size": 3493,
+      "date": 132988621452542125
+    },
+    {
+      "path": "effects/texture/LIGHT_AS-B787-10_NavigationWhite.fx",
+      "size": 3873,
+      "date": 132988621452701594
+    },
+    {
+      "path": "effects/texture/LIGHT_AS-B787-10_StrobeSimple.fx",
+      "size": 3523,
+      "date": 132988621452861059
+    },
+    {
+      "path": "effects/texture/LIGHT_AS-B787-10_TaxiLarge.fx",
+      "size": 4841,
+      "date": 132988621453030476
+    },
+    {
+      "path": "effects/texture/LIGHT_AS-B787-10_WingLarge.FX",
+      "size": 3878,
+      "date": 132988621453150081
+    },
+    {
+      "path": "effects/texture/LIGHT_ASOBO_BeaconBelly.fx",
+      "size": 4653,
+      "date": 132988621453229809
+    },
+    {
+      "path": "effects/texture/LIGHT_ASOBO_BeaconBellyOmni.fx",
+      "size": 4655,
+      "date": 132988621453389278
+    },
+    {
+      "path": "effects/texture/LIGHT_ASOBO_BeaconBellyup.fx",
+      "size": 1992,
+      "date": 132988621453558715
+    },
+    {
+      "path": "effects/texture/LIGHT_ASOBO_BeaconTop.fx",
+      "size": 4663,
+      "date": 132988621453718176
+    },
+    {
+      "path": "effects/texture/LIGHT_ASOBO_BeaconTopdown.fx",
+      "size": 1226,
+      "date": 132988621453887608
+    },
+    {
+      "path": "effects/texture/LIGHT_ASOBO_Landing+.fx",
+      "size": 1241,
+      "date": 132988621454216509
+    },
+    {
+      "path": "effects/texture/LIGHT_ASOBO_Landing.fx",
+      "size": 4659,
+      "date": 132988621454057099
+    },
+    {
+      "path": "effects/texture/LIGHT_ASOBO_LandingBelly+.fx",
+      "size": 1247,
+      "date": 132988621454535443
+    },
+    {
+      "path": "effects/texture/LIGHT_ASOBO_LandingBelly.fx",
+      "size": 4687,
+      "date": 132988621454366014
+    },
+    {
+      "path": "effects/texture/LIGHT_ASOBO_LandingBellypulse+.fx",
+      "size": 1245,
+      "date": 132988621454814528
+    },
+    {
+      "path": "effects/texture/LIGHT_ASOBO_LandingBellypulse.fx",
+      "size": 4679,
+      "date": 132988621454655043
+    },
+    {
+      "path": "effects/texture/LIGHT_ASOBO_LandingLarge+.fx",
+      "size": 1289,
+      "date": 132988621455193261
+    },
+    {
+      "path": "effects/texture/LIGHT_ASOBO_LandingLarge.fx",
+      "size": 4850,
+      "date": 132988621455003901
+    },
+    {
+      "path": "effects/texture/LIGHT_ASOBO_LandingOld.fx",
+      "size": 4659,
+      "date": 132988621455412534
+    },
+    {
+      "path": "effects/texture/LIGHT_ASOBO_LandingPulse.fx",
+      "size": 4631,
+      "date": 132988621455632403
+    },
+    {
+      "path": "effects/texture/LIGHT_ASOBO_LogoLight.fx",
+      "size": 3662,
+      "date": 132988621455821156
+    },
+    {
+      "path": "effects/texture/LIGHT_ASOBO_LogoLightLarge.fx",
+      "size": 3665,
+      "date": 132988621456020496
+    },
+    {
+      "path": "effects/texture/LIGHT_ASOBO_NavigationGreen.fx",
+      "size": 3521,
+      "date": 132988621456169982
+    },
+    {
+      "path": "effects/texture/LIGHT_ASOBO_NavigationRed.fx",
+      "size": 3496,
+      "date": 132988621456329457
+    },
+    {
+      "path": "effects/texture/LIGHT_ASOBO_NavigationWhite.fx",
+      "size": 3876,
+      "date": 132988621456496719
+    },
+    {
+      "path": "effects/texture/LIGHT_ASOBO_Recognition.fx",
+      "size": 4674,
+      "date": 132988621456686090
+    },
+    {
+      "path": "effects/texture/LIGHT_ASOBO_StrobeBelly.fx",
+      "size": 3529,
+      "date": 132988621456885417
+    },
+    {
+      "path": "effects/texture/LIGHT_ASOBO_StrobeDouble.fx",
+      "size": 7325,
+      "date": 132988621457034945
+    },
+    {
+      "path": "effects/texture/LIGHT_ASOBO_StrobeSimple.fx",
+      "size": 3525,
+      "date": 132988621457214332
+    },
+    {
+      "path": "effects/texture/LIGHT_ASOBO_StrobeTop.fx",
+      "size": 3539,
+      "date": 132988621457393722
+    },
+    {
+      "path": "effects/texture/LIGHT_ASOBO_Taxi.fx",
+      "size": 4573,
+      "date": 132988621457548354
+    },
+    {
+      "path": "effects/texture/LIGHT_ASOBO_TaxiBelly+.fx",
+      "size": 1298,
+      "date": 132988621457897187
+    },
+    {
+      "path": "effects/texture/LIGHT_ASOBO_TaxiBelly.fx",
+      "size": 4902,
+      "date": 132988621457707825
+    },
+    {
+      "path": "effects/texture/LIGHT_ASOBO_TaxiLarge.fx",
+      "size": 4844,
+      "date": 132988621458086556
+    },
+    {
+      "path": "effects/texture/LIGHT_ASOBO_TBM930_IceLight.fx",
+      "size": 3856,
+      "date": 132988621458295868
+    },
+    {
+      "path": "effects/texture/LIGHT_ASOBO_TBM930_Pulse.fx",
+      "size": 4857,
+      "date": 132988621458468572
+    },
+    {
+      "path": "effects/texture/LIGHT_ASOBO_TBM930_Recognition.fx",
+      "size": 3503,
+      "date": 132988621458667957
+    },
+    {
+      "path": "effects/texture/LIGHT_ASOBO_TBM930_StrobeTailStatic.fx",
+      "size": 3517,
+      "date": 132988621458857318
+    },
+    {
+      "path": "effects/texture/LIGHT_ASOBO_Wing.FX",
+      "size": 3880,
+      "date": 132988621459047278
+    },
+    {
+      "path": "effects/texture/LIGHT_ASOBO_WingLarge.FX",
+      "size": 3882,
+      "date": 132988621459166275
+    },
+    {
+      "path": "effects/texture/LIGHT_B737_BeaconBelly.fx",
+      "size": 4649,
+      "date": 132988621459355665
+    },
+    {
+      "path": "effects/texture/LIGHT_B737_BeaconBellyup.fx",
+      "size": 1232,
+      "date": 132988621459542555
+    },
+    {
+      "path": "effects/texture/LIGHT_B737_BeaconTop.fx",
+      "size": 4663,
+      "date": 132988621459721995
+    },
+    {
+      "path": "effects/texture/LIGHT_B737_BeaconTopdown.fx",
+      "size": 1228,
+      "date": 132988621459901362
+    },
+    {
+      "path": "effects/texture/LIGHT_B737_LandingLarge+.fx",
+      "size": 1284,
+      "date": 132988621460250180
+    },
+    {
+      "path": "effects/texture/LIGHT_B737_LandingLarge.fx",
+      "size": 4848,
+      "date": 132988621460080772
+    },
+    {
+      "path": "effects/texture/LIGHT_B737_LandingLargeLED.fx",
+      "size": 4850,
+      "date": 132988621460449520
+    },
+    {
+      "path": "effects/texture/LIGHT_B737_LandingLargeLED2.fx",
+      "size": 4844,
+      "date": 132988621460628941
+    },
+    {
+      "path": "effects/texture/LIGHT_B737_LogoLightLarge.fx",
+      "size": 3667,
+      "date": 132988621460798363
+    },
+    {
+      "path": "effects/texture/LIGHT_B737_NavigationGreen.fx",
+      "size": 3513,
+      "date": 132988621460997681
+    },
+    {
+      "path": "effects/texture/LIGHT_B737_NavigationRed.fx",
+      "size": 3492,
+      "date": 132988621461167123
+    },
+    {
+      "path": "effects/texture/LIGHT_B737_NavigationWhite.fx",
+      "size": 3872,
+      "date": 132988621461356482
+    },
+    {
+      "path": "effects/texture/LIGHT_B737_StrobeDouble.fx",
+      "size": 7323,
+      "date": 132988621461505983
+    },
+    {
+      "path": "effects/texture/LIGHT_B737_StrobeSimple.fx",
+      "size": 3523,
+      "date": 132988621461695380
+    },
+    {
+      "path": "effects/texture/LIGHT_B737_StrobeSimpleold.fx",
+      "size": 3523,
+      "date": 132988621461834901
+    },
+    {
+      "path": "effects/texture/LIGHT_B737_StrobeSimpleTail.fx",
+      "size": 3530,
+      "date": 132988621462014319
+    },
+    {
+      "path": "effects/texture/LIGHT_B737_TaxiLarge.fx",
+      "size": 4837,
+      "date": 132988621462203649
+    },
+    {
+      "path": "effects/texture/LIGHT_B737_TaxiLargeLED.fx",
+      "size": 4839,
+      "date": 132988621462353159
+    },
+    {
+      "path": "effects/texture/LIGHT_B737_TaxiLargeLED2.fx",
+      "size": 4836,
+      "date": 132988621462533254
+    },
+    {
+      "path": "effects/texture/LIGHT_B737_Wheel.fx",
+      "size": 1284,
+      "date": 132988621462711948
+    },
+    {
+      "path": "effects/texture/LIGHT_B737_WingLarge.FX",
+      "size": 3882,
+      "date": 132988621462861497
+    },
+    {
+      "path": "effects/texture/LIGHT_B747_8i_BeaconBelly.fx",
+      "size": 4663,
+      "date": 132988621463020967
+    },
+    {
+      "path": "effects/texture/LIGHT_B747_8i_BeaconBellyup.fx",
+      "size": 1230,
+      "date": 132988621463190346
+    },
+    {
+      "path": "effects/texture/LIGHT_B747_8i_BeaconTop.fx",
+      "size": 4665,
+      "date": 132988621463299980
+    },
+    {
+      "path": "effects/texture/LIGHT_B747_8i_BeaconTopdown.fx",
+      "size": 1228,
+      "date": 132988621463419585
+    },
+    {
+      "path": "effects/texture/LIGHT_B747_8i_LandingLarge+.fx",
+      "size": 1289,
+      "date": 132988621463688689
+    },
+    {
+      "path": "effects/texture/LIGHT_B747_8i_LandingLarge.fx",
+      "size": 4850,
+      "date": 132988621463559127
+    },
+    {
+      "path": "effects/texture/LIGHT_B747_8i_LogoLightLarge.fx",
+      "size": 3665,
+      "date": 132988621463808298
+    },
+    {
+      "path": "effects/texture/LIGHT_B747_8i_NavigationGreen.fx",
+      "size": 3514,
+      "date": 132988621464017586
+    },
+    {
+      "path": "effects/texture/LIGHT_B747_8i_NavigationRed.fx",
+      "size": 3493,
+      "date": 132988621464236849
+    },
+    {
+      "path": "effects/texture/LIGHT_B747_8i_NavigationWhite.fx",
+      "size": 3873,
+      "date": 132988621464416253
+    },
+    {
+      "path": "effects/texture/LIGHT_B747_8i_StrobeSimple.fx",
+      "size": 3527,
+      "date": 132988621464556117
+    },
+    {
+      "path": "effects/texture/LIGHT_B747_8i_TaxiLarge.fx",
+      "size": 4844,
+      "date": 132988621464705289
+    },
+    {
+      "path": "effects/texture/LIGHT_B747_8i_WingLarge.FX",
+      "size": 3882,
+      "date": 132988621464874763
+    },
+    {
+      "path": "effects/texture/LIGHT_CAR_StrobeSimple.fx",
+      "size": 1230,
+      "date": 132988621465054195
+    },
+    {
+      "path": "effects/texture/LIGHT_CSMASTB7_BeaconBelly.fx",
+      "size": 4658,
+      "date": 132988621465243886
+    },
+    {
+      "path": "effects/texture/LIGHT_CSMASTB7_BeaconTop.fx",
+      "size": 4672,
+      "date": 132988621465452788
+    },
+    {
+      "path": "effects/texture/LIGHT_CSMASTB7_BeaconTopdown.fx",
+      "size": 1233,
+      "date": 132988621465662086
+    },
+    {
+      "path": "effects/texture/LIGHT_CSMASTB7_LandingLarge+.fx",
+      "size": 1287,
+      "date": 132988621465971058
+    },
+    {
+      "path": "effects/texture/LIGHT_CSMASTB7_LandingLarge.fx",
+      "size": 4848,
+      "date": 132988621465841489
+    },
+    {
+      "path": "effects/texture/LIGHT_CSMASTB7_LogoLightLarge.fx",
+      "size": 3668,
+      "date": 132988621466100613
+    },
+    {
+      "path": "effects/texture/LIGHT_CSMASTB7_NavigationGreen.fx",
+      "size": 3518,
+      "date": 132988621466329857
+    },
+    {
+      "path": "effects/texture/LIGHT_CSMASTB7_NavigationRed.fx",
+      "size": 3497,
+      "date": 132988621466524305
+    },
+    {
+      "path": "effects/texture/LIGHT_CSMASTB7_NavigationWhite.fx",
+      "size": 3877,
+      "date": 132988621466743584
+    },
+    {
+      "path": "effects/texture/LIGHT_CSMASTB7_StrobeSimple.fx",
+      "size": 3531,
+      "date": 132988621466932934
+    },
+    {
+      "path": "effects/texture/LIGHT_CSMASTB7_TaxiLarge.fx",
+      "size": 4843,
+      "date": 132988621467102394
+    },
+    {
+      "path": "effects/texture/LIGHT_CSMASTB7_WingLarge.FX",
+      "size": 3884,
+      "date": 132988621467271815
+    },
+    {
+      "path": "effects/texture/LIGHT_MSPC6_BeaconBelly.fx",
+      "size": 4661,
+      "date": 132988621467511019
+    },
+    {
+      "path": "effects/texture/LIGHT_MSPC6_BeaconTop.fx",
+      "size": 4667,
+      "date": 132988621467710342
+    },
+    {
+      "path": "effects/texture/LIGHT_Newlight_H135_Landing.fx",
+      "size": 4657,
+      "date": 132988621467909665
+    },
+    {
+      "path": "effects/texture/LIGHT_Newlight_H135_Spotlight.fx",
+      "size": 4759,
+      "date": 132988621468079156
+    },
+    {
+      "path": "effects/texture/LIGHT_Newlight_Landing icon5.fx",
+      "size": 4649,
+      "date": 132988621468228599
+    },
+    {
+      "path": "effects/texture/LIGHT_Newlight_StrobeSimplegreen.fx",
+      "size": 4666,
+      "date": 132988621468407999
+    },
+    {
+      "path": "effects/texture/LIGHT_Newlight_StrobeSimplered.fx",
+      "size": 4644,
+      "date": 132988621468557500
+    },
+    {
+      "path": "effects/texture/LIGHT_Newlight_Taxi icon5.fx",
+      "size": 4551,
+      "date": 132988621468687069
+    },
+    {
+      "path": "effects/texture/LIGHTLanding-belly.dds",
+      "size": 262272,
+      "date": 132988653868714001
+    },
+    {
+      "path": "effects/texture/LIGHTLANDING-BELLY.DDS.json",
+      "size": 102,
+      "date": 132988653868913321
+    },
+    {
+      "path": "effects/texture/LIGHTLanding-L.dds",
+      "size": 262272,
+      "date": 132988653869059167
+    },
+    {
+      "path": "effects/texture/LIGHTLANDING-L.DDS.json",
+      "size": 102,
+      "date": 132988653869218185
+    },
+    {
+      "path": "effects/texture/LIGHTLanding.dds",
+      "size": 262272,
+      "date": 132988653868373211
+    },
+    {
+      "path": "effects/texture/LIGHTLANDING.DDS.json",
+      "size": 102,
+      "date": 132988653868545928
+    },
+    {
+      "path": "effects/texture/LIGHTNav.dds",
+      "size": 65664,
+      "date": 132988653869397576
+    },
+    {
+      "path": "effects/texture/LIGHTNAV.DDS.json",
+      "size": 119,
+      "date": 132988653869497244
+    },
+    {
+      "path": "effects/texture/LIGHTold.dds",
+      "size": 262272,
+      "date": 132988653869736460
+    },
+    {
+      "path": "effects/texture/LIGHTOLD.DDS.json",
+      "size": 119,
+      "date": 132988653869905877
+    },
+    {
+      "path": "effects/texture/LIGHTtaxy-belly.dds",
+      "size": 262272,
+      "date": 132988653870414319
+    },
+    {
+      "path": "effects/texture/LIGHTTAXY-BELLY.DDS.json",
+      "size": 102,
+      "date": 132988653870613515
+    },
+    {
+      "path": "effects/texture/LIGHTtaxy-L.dds",
+      "size": 262272,
+      "date": 132988653870763012
+    },
+    {
+      "path": "effects/texture/LIGHTTAXY-L.DDS.json",
+      "size": 102,
+      "date": 132988653870922488
+    },
+    {
+      "path": "effects/texture/LIGHTtaxy.dds",
+      "size": 262272,
+      "date": 132988653870115200
+    },
+    {
+      "path": "effects/texture/LIGHTTAXY.DDS.json",
+      "size": 102,
+      "date": 132988653870255175
+    },
+    {
+      "path": "effects/texture/LIGHTWing.dds",
+      "size": 65664,
+      "date": 132988653871121810
+    },
+    {
+      "path": "effects/texture/LIGHTWING.DDS.json",
+      "size": 119,
+      "date": 132988653871251379
+    },
+    {
+      "path": "effects/texture/texture/flare.png",
+      "size": 38737,
+      "date": 132988648007439603
+    },
+    {
+      "path": "effects/texture/texture/LIGHTLanding-belly.dds",
+      "size": 262272,
+      "date": 132988653989453639
+    },
+    {
+      "path": "effects/texture/texture/LIGHTLANDING-BELLY.DDS.json",
+      "size": 102,
+      "date": 132988653989583184
+    },
+    {
+      "path": "effects/texture/texture/LIGHTLanding-L.dds",
+      "size": 262272,
+      "date": 132988653989762588
+    },
+    {
+      "path": "effects/texture/texture/LIGHTLANDING-L.DDS.json",
+      "size": 102,
+      "date": 132988653989932026
+    },
+    {
+      "path": "effects/texture/texture/LIGHTLanding.dds",
+      "size": 262272,
+      "date": 132988653990109193
+    },
+    {
+      "path": "effects/texture/texture/LIGHTLANDING.DDS.json",
+      "size": 102,
+      "date": 132988653990288555
+    },
+    {
+      "path": "effects/texture/texture/LIGHTNav.dds",
+      "size": 65664,
+      "date": 132988653990477968
+    },
+    {
+      "path": "effects/texture/texture/LIGHTNAV.DDS.json",
+      "size": 119,
+      "date": 132988653990607489
+    },
+    {
+      "path": "effects/texture/texture/LIGHTold.dds",
+      "size": 262272,
+      "date": 132988653990847261
+    },
+    {
+      "path": "effects/texture/texture/LIGHTOLD.DDS.json",
+      "size": 119,
+      "date": 132988653990966354
+    },
+    {
+      "path": "effects/texture/texture/LIGHTtaxy-belly.dds",
+      "size": 262272,
+      "date": 132988653991195535
+    },
+    {
+      "path": "effects/texture/texture/LIGHTTAXY-BELLY.DDS.json",
+      "size": 102,
+      "date": 132988653991335103
+    },
+    {
+      "path": "effects/texture/texture/LIGHTtaxy-L.dds",
+      "size": 262272,
+      "date": 132988653991524423
+    },
+    {
+      "path": "effects/texture/texture/LIGHTTAXY-L.DDS.json",
+      "size": 102,
+      "date": 132988653991693855
+    },
+    {
+      "path": "effects/texture/texture/LIGHTtaxy.dds",
+      "size": 262272,
+      "date": 132988653991863281
+    },
+    {
+      "path": "effects/texture/texture/LIGHTTAXY.DDS.json",
+      "size": 102,
+      "date": 132988653992044789
+    },
+    {
+      "path": "effects/texture/texture/LIGHTWing.dds",
+      "size": 65664,
+      "date": 132988653992204255
+    },
+    {
+      "path": "effects/texture/texture/LIGHTWING.DDS.json",
+      "size": 119,
+      "date": 132988653992353756
+    },
+    {
+      "path": "effects/texture/texture/TX-((.dds",
+      "size": 1048704,
+      "date": 132988653992592916
+    },
+    {
+      "path": "effects/texture/texture/TX-((.DDS.json",
+      "size": 102,
+      "date": 132988653992712510
+    },
+    {
+      "path": "effects/texture/texture/TX-ALLO-2.png",
+      "size": 23865,
+      "date": 132988648802310415
+    },
+    {
+      "path": "effects/texture/texture/TX-ALLO-3.dds",
+      "size": 65664,
+      "date": 132988653992941746
+    },
+    {
+      "path": "effects/texture/texture/TX-ALLO-3.DDS.json",
+      "size": 119,
+      "date": 132988653993051377
+    },
+    {
+      "path": "effects/texture/texture/TX-ALLO.dds",
+      "size": 65664,
+      "date": 132988653993230780
+    },
+    {
+      "path": "effects/texture/texture/TX-ALLO.DDS.json",
+      "size": 119,
+      "date": 132988653993420186
+    },
+    {
+      "path": "effects/texture/texture/TX-ALLO.png",
+      "size": 17315,
+      "date": 132988648926352242
+    },
+    {
+      "path": "effects/texture/texture/TX-FLASH.png",
+      "size": 23865,
+      "date": 132988648802310415
+    },
+    {
+      "path": "effects/texture/texture/TX-LIGHT.png",
+      "size": 23865,
+      "date": 132988648802310415
+    },
+    {
+      "path": "effects/texture/texture/TX-LIGHT2.png",
+      "size": 23865,
+      "date": 132988648802310415
+    },
+    {
+      "path": "effects/texture/texture/TX-NAV.png",
+      "size": 21665,
+      "date": 132988648503855174
+    },
+    {
+      "path": "effects/texture/texture/TX-STROBE.png",
+      "size": 21613,
+      "date": 132988648460112778
+    },
+    {
+      "path": "effects/texture/TX-((.dds",
+      "size": 1048704,
+      "date": 132988653871490587
+    },
+    {
+      "path": "effects/texture/TX-((.DDS.json",
+      "size": 102,
+      "date": 132988653871630120
+    },
+    {
+      "path": "effects/texture/TX-ALLO-2.png",
+      "size": 23865,
+      "date": 132988648802310415
+    },
+    {
+      "path": "effects/texture/TX-ALLO-3.dds",
+      "size": 65664,
+      "date": 132988653872109201
+    },
+    {
+      "path": "effects/texture/TX-ALLO-3.DDS.json",
+      "size": 119,
+      "date": 132988653872238113
+    },
+    {
+      "path": "effects/texture/TX-ALLO.dds",
+      "size": 65664,
+      "date": 132988653871789629
+    },
+    {
+      "path": "effects/texture/TX-ALLO.DDS.json",
+      "size": 119,
+      "date": 132988653871969385
+    },
+    {
+      "path": "effects/texture/TX-ALLO.png",
+      "size": 17315,
+      "date": 132988648926352242
+    },
+    {
+      "path": "effects/texture/TX-FLASH.png",
+      "size": 23865,
+      "date": 132988648802310415
+    },
+    {
+      "path": "effects/texture/TX-LIGHT.png",
+      "size": 23865,
+      "date": 132988648802310415
+    },
+    {
+      "path": "effects/texture/TX-LIGHT2.png",
+      "size": 23865,
+      "date": 132988648802310415
+    },
+    {
+      "path": "effects/texture/TX-NAV.png",
+      "size": 21665,
+      "date": 132988648503855174
+    },
+    {
+      "path": "effects/texture/TX-STROBE.png",
+      "size": 21613,
+      "date": 132988648460112778
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/ai.cfg",
+      "size": 745,
+      "date": 133140574234067873
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/aircraft.cfg",
+      "size": 21375,
+      "date": 133162464707430476
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/apron.FLT",
+      "size": 2752,
+      "date": 133140574234166669
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/cameras.cfg",
+      "size": 22372,
+      "date": 133173590652050819
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/cockpit.cfg",
+      "size": 4772,
+      "date": 133140574234277441
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/Cruise.flt",
+      "size": 2843,
+      "date": 133140574234379282
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/engines.cfg",
+      "size": 9091,
+      "date": 133197523374950299
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/flight_model.cfg",
+      "size": 17559,
+      "date": 133212594580279044
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/gameplay.cfg",
+      "size": 695,
+      "date": 133140574234681301
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/hangar.flt",
+      "size": 1632,
+      "date": 133140574234781822
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/model/FCP_EngineTemplate.xml",
+      "size": 10480,
+      "date": 133157883759317483
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/model/model.CFG",
+      "size": 674,
+      "date": 133161437229090223
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/model/SA_342.xml",
+      "size": 13461,
+      "date": 133162454628444119
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/model/SA_342_Interior.xml",
+      "size": 55364,
+      "date": 133173644548999631
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/model/SA_342_Interior_lod00.bin",
+      "size": 12268858,
+      "date": 133173617960223294
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/model/SA_342_Interior_lod00.gltf",
+      "size": 902880,
+      "date": 133173617960273083
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/model/SA_342_lod00.bin",
+      "size": 14386900,
+      "date": 133173617399574547
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/model/SA_342_lod00.gltf",
+      "size": 290325,
+      "date": 133173617399600114
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/model/SA_342_Templates.xml",
+      "size": 183745,
+      "date": 133161437232186458
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/Notice.txt",
+      "size": 183,
+      "date": 133140574239007610
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/panel/panel.cfg",
+      "size": 681,
+      "date": 133173639119801523
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/runway.FLT",
+      "size": 2759,
+      "date": 133140574239365018
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/sound/alarm.wav",
+      "size": 222656,
+      "date": 133161437232547868
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/sound/Asobo_TBM930.PC.PCK",
+      "size": 76494941,
+      "date": 133161437239225929
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/sound/button_gtn750.wav",
+      "size": 23636,
+      "date": 133161437239401496
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/sound/NemethDesigns_B407.PC.PCK",
+      "size": 55250343,
+      "date": 133161437244340899
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/sound/sound.xml",
+      "size": 36183,
+      "date": 133161437244524769
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/soundAI/NemethDesigns_B407_AI.PC.PCK",
+      "size": 9968001,
+      "date": 133161437245544414
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/soundAI/soundai.xml",
+      "size": 5031,
+      "date": 133161437245699573
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/systems.cfg",
+      "size": 17015,
+      "date": 133173621153954448
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/target_performance.cfg",
+      "size": 1791,
+      "date": 133140574241664035
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture.BANDIT/Heli_Body_01_Diffuse.png.DDS",
+      "size": 11184952,
+      "date": 133161437246315964
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture.BANDIT/Heli_Body_01_Diffuse.png.DDS.json",
+      "size": 102,
+      "date": 133161437246315964
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture.BANDIT/Heli_Body_02_Diffuse.png.DDS",
+      "size": 11184952,
+      "date": 133161437246905999
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture.BANDIT/Heli_Body_02_Diffuse.png.DDS.json",
+      "size": 102,
+      "date": 133161437246905999
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture.BANDIT/texture.CFG",
+      "size": 62,
+      "date": 133161437247047628
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture.BANDIT/thumbnail.JPG",
+      "size": 85971,
+      "date": 133161437247178386
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture.BANDIT/thumbnail_small.JPG",
+      "size": 17232,
+      "date": 133161437247303564
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture.BLACK/Heli_Body_01_Diffuse.png.DDS",
+      "size": 11184952,
+      "date": 133161437247826305
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture.BLACK/Heli_Body_01_Diffuse.png.DDS.json",
+      "size": 102,
+      "date": 133161437247826305
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture.BLACK/Heli_Body_02_Diffuse.png.DDS",
+      "size": 11184952,
+      "date": 133161437248718311
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture.BLACK/Heli_Body_02_Diffuse.png.DDS.json",
+      "size": 102,
+      "date": 133161437248718311
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture.BLACK/texture.CFG",
+      "size": 60,
+      "date": 133161437249388892
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture.BLACK/thumbnail.JPG",
+      "size": 84877,
+      "date": 133161437249519079
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture.BLACK/thumbnail_small.JPG",
+      "size": 17372,
+      "date": 133161437249797567
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture.CAMO/Heli_Body_01_Diffuse.png.DDS",
+      "size": 11184952,
+      "date": 133161437251004666
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture.CAMO/Heli_Body_01_Diffuse.png.DDS.json",
+      "size": 102,
+      "date": 133161437251004666
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture.CAMO/Heli_Body_02_Diffuse.png.DDS",
+      "size": 11184952,
+      "date": 133161437252151961
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture.CAMO/Heli_Body_02_Diffuse.png.DDS.json",
+      "size": 102,
+      "date": 133161437252151961
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture.CAMO/texture.CFG",
+      "size": 59,
+      "date": 133161437252293884
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture.CAMO/thumbnail.JPG",
+      "size": 85157,
+      "date": 133161437252439389
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture.CAMO/thumbnail_small.JPG",
+      "size": 17275,
+      "date": 133161437252564583
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture.CYPRIOT/Heli_Body_01_Diffuse.png.DDS",
+      "size": 11184952,
+      "date": 133161437253238313
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture.CYPRIOT/Heli_Body_01_Diffuse.png.DDS.json",
+      "size": 102,
+      "date": 133161437253238313
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture.CYPRIOT/Heli_Body_02_Diffuse.png.DDS",
+      "size": 11184952,
+      "date": 133161437253956244
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture.CYPRIOT/Heli_Body_02_Diffuse.png.DDS.json",
+      "size": 102,
+      "date": 133161437253956244
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture.CYPRIOT/texture.CFG",
+      "size": 62,
+      "date": 133161437254081816
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture.CYPRIOT/thumbnail.JPG",
+      "size": 86198,
+      "date": 133161437254206923
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture.CYPRIOT/thumbnail_small.JPG",
+      "size": 17249,
+      "date": 133161437254326025
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture.SNOW/Heli_Body_01_Diffuse.png.DDS",
+      "size": 11184952,
+      "date": 133161437254879037
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture.SNOW/Heli_Body_01_Diffuse.png.DDS.json",
+      "size": 102,
+      "date": 133161437254879037
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture.SNOW/Heli_Body_02_Diffuse.png.DDS",
+      "size": 11184952,
+      "date": 133161437255387408
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture.SNOW/Heli_Body_02_Diffuse.png.DDS.json",
+      "size": 102,
+      "date": 133161437255387408
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture.SNOW/texture.CFG",
+      "size": 59,
+      "date": 133161437255522597
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture.SNOW/thumbnail.JPG",
+      "size": 86047,
+      "date": 133161437255647852
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture.SNOW/thumbnail_small.JPG",
+      "size": 17152,
+      "date": 133161437255783164
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture.TAN/Heli_Body_01_Diffuse.png.DDS",
+      "size": 22369776,
+      "date": 133161437256418090
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture.TAN/Heli_Body_01_Diffuse.png.DDS.json",
+      "size": 119,
+      "date": 133161437256418090
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture.TAN/Heli_Body_02_Diffuse.png.DDS",
+      "size": 22369776,
+      "date": 133161437256958833
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture.TAN/Heli_Body_02_Diffuse.png.DDS.json",
+      "size": 119,
+      "date": 133161437256958833
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture.TAN/texture.CFG",
+      "size": 58,
+      "date": 133161437257100774
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture.TAN/thumbnail.JPG",
+      "size": 85700,
+      "date": 133161437257230301
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture.TAN/thumbnail_small.JPG",
+      "size": 17217,
+      "date": 133161437257355343
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture.THREE/Heli_Body_01_Diffuse.png.DDS",
+      "size": 11184952,
+      "date": 133161437257975710
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture.THREE/Heli_Body_01_Diffuse.png.DDS.json",
+      "size": 102,
+      "date": 133161437257975710
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture.THREE/Heli_Body_02_Diffuse.png.DDS",
+      "size": 11184952,
+      "date": 133161437258571845
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture.THREE/Heli_Body_02_Diffuse.png.DDS.json",
+      "size": 102,
+      "date": 133161437258571845
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture.THREE/texture.CFG",
+      "size": 62,
+      "date": 133161437258688438
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture.THREE/thumbnail.JPG",
+      "size": 85686,
+      "date": 133161437258809668
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture.THREE/thumbnail_small.JPG",
+      "size": 17358,
+      "date": 133161437258929781
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture.TIGER/Heli_Body_01_Diffuse.png.DDS",
+      "size": 11184952,
+      "date": 133161437259828183
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture.TIGER/Heli_Body_01_Diffuse.png.DDS.json",
+      "size": 102,
+      "date": 133161437259828183
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture.TIGER/Heli_Body_02_Diffuse.png.DDS",
+      "size": 11184952,
+      "date": 133161437260715589
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture.TIGER/Heli_Body_02_Diffuse.png.DDS.json",
+      "size": 102,
+      "date": 133161437260715589
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture.TIGER/texture.CFG",
+      "size": 60,
+      "date": 133161437260855954
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture.TIGER/thumbnail.JPG",
+      "size": 85927,
+      "date": 133161437260986090
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture.TIGER/thumbnail_small.JPG",
+      "size": 17280,
+      "date": 133161437261106870
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture.WHITE/Heli_Body_01_Diffuse.png.DDS",
+      "size": 11184952,
+      "date": 133161437261705795
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture.WHITE/Heli_Body_01_Diffuse.png.DDS.json",
+      "size": 102,
+      "date": 133161437261705795
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture.WHITE/Heli_Body_02_Diffuse.png.DDS",
+      "size": 11184952,
+      "date": 133161437262166066
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture.WHITE/Heli_Body_02_Diffuse.png.DDS.json",
+      "size": 102,
+      "date": 133161437262166066
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture.WHITE/texture.CFG",
+      "size": 60,
+      "date": 133161437262300738
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture.WHITE/thumbnail.JPG",
+      "size": 85776,
+      "date": 133161437262426321
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture.WHITE/thumbnail_small.JPG",
+      "size": 17198,
+      "date": 133161437262547067
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture.Yellow/Heli_Body_01_Diffuse.png.DDS",
+      "size": 11184952,
+      "date": 133161437263175807
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture.Yellow/Heli_Body_01_Diffuse.png.DDS.json",
+      "size": 102,
+      "date": 133161437263175807
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture.Yellow/Heli_Body_02_Diffuse.png.DDS",
+      "size": 11184952,
+      "date": 133161437263595057
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture.Yellow/Heli_Body_02_Diffuse.png.DDS.json",
+      "size": 102,
+      "date": 133161437263595057
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture.Yellow/texture.CFG",
+      "size": 61,
+      "date": 133161437263745647
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture.Yellow/thumbnail.JPG",
+      "size": 86962,
+      "date": 133161437263870651
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture.Yellow/thumbnail_small.JPG",
+      "size": 17561,
+      "date": 133161437264277404
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/10_emis.png.DDS",
+      "size": 699192,
+      "date": 133173616781346695
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/10_emis.png.DDS.json",
+      "size": 102,
+      "date": 133173616781346695
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/11_emis.png.DDS",
+      "size": 699192,
+      "date": 133173616781665561
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/11_emis.png.DDS.json",
+      "size": 102,
+      "date": 133173616781665561
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/12_emis.png.DDS",
+      "size": 699192,
+      "date": 133173616781737434
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/12_emis.png.DDS.json",
+      "size": 102,
+      "date": 133173616781737434
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/3_emis.png.DDS",
+      "size": 2796344,
+      "date": 133173616783291215
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/3_emis.png.DDS.json",
+      "size": 102,
+      "date": 133173616783291215
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/5050-normal.png.DDS",
+      "size": 349680,
+      "date": 133173616934093914
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/5050-normal.png.DDS.json",
+      "size": 160,
+      "date": 133173616934093914
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/8_emis.png.DDS",
+      "size": 699192,
+      "date": 133173616781711627
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/8_emis.png.DDS.json",
+      "size": 102,
+      "date": 133173616781711627
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/9_emis.png.DDS",
+      "size": 699192,
+      "date": 133173616781685485
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/9_emis.png.DDS.json",
+      "size": 102,
+      "date": 133173616781685485
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/ADF_AS87_DECAL_ALBD_TIF.png.DDS",
+      "size": 349680,
+      "date": 133173616781611034
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/ADF_AS87_DECAL_ALBD_TIF.png.DDS.json",
+      "size": 119,
+      "date": 133173616781611034
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/ADF_AS87_DECAL_EMIS_PNG.png.DDS",
+      "size": 174904,
+      "date": 133173616781611034
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/ADF_AS87_DECAL_EMIS_PNG.png.DDS.json",
+      "size": 102,
+      "date": 133173616781611034
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/AIRFRAME_LIGHTS_EMIS_PNG.png.DDS",
+      "size": 2796344,
+      "date": 133173616934163844
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/AIRFRAME_LIGHTS_EMIS_PNG.png.DDS.json",
+      "size": 102,
+      "date": 133173616934163844
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/ALTIMETER_MB_INHG_ALBD_PNG.png.DDS",
+      "size": 699192,
+      "date": 133173616780820018
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/ALTIMETER_MB_INHG_ALBD_PNG.png.DDS.json",
+      "size": 102,
+      "date": 133173616780820018
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/ALTIMETER_MB_INHG_ALBD_PNG_emis.png.DDS",
+      "size": 699192,
+      "date": 133173616780810048
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/ALTIMETER_MB_INHG_ALBD_PNG_emis.png.DDS.json",
+      "size": 102,
+      "date": 133173616780810048
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/ALTIMETER_MB_INHG_NORM_PNG.png.DDS",
+      "size": 1398256,
+      "date": 133173616780810048
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/ALTIMETER_MB_INHG_NORM_PNG.png.DDS.json",
+      "size": 160,
+      "date": 133173616780810048
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/AS140_RADIO_ADF_ALBD_PNG.png.DDS",
+      "size": 2796344,
+      "date": 133173616781611034
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/AS140_RADIO_ADF_ALBD_PNG.png.DDS.json",
+      "size": 102,
+      "date": 133173616781611034
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/AS140_RADIO_ADF_EMIS_PNG.png.DDS",
+      "size": 2796344,
+      "date": 133173616781566087
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/AS140_RADIO_ADF_EMIS_PNG.png.DDS.json",
+      "size": 102,
+      "date": 133173616781566087
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/AS140_RADIO_ADF_NORM_PNG.png.DDS",
+      "size": 5592560,
+      "date": 133173616781596018
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/AS140_RADIO_ADF_NORM_PNG.png.DDS.json",
+      "size": 160,
+      "date": 133173616781596018
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/AS530_430_ALBD.png.DDS",
+      "size": 2796344,
+      "date": 133173616780961278
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/AS530_430_ALBD.png.DDS.json",
+      "size": 102,
+      "date": 133173616780961278
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/AS530_430_ALBD_PNG_png.png.DDS",
+      "size": 2796344,
+      "date": 133173616780941305
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/AS530_430_ALBD_PNG_png.png.DDS.json",
+      "size": 102,
+      "date": 133173616780941305
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/AS530_430_DECAL_ALBD_TIF.png.DDS",
+      "size": 349680,
+      "date": 133173616780941305
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/AS530_430_DECAL_ALBD_TIF.png.DDS.json",
+      "size": 119,
+      "date": 133173616780941305
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/AS530_430_DECAL_EMIS_PNG.png.DDS",
+      "size": 87536,
+      "date": 133173616780941305
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/AS530_430_DECAL_EMIS_PNG.png.DDS.json",
+      "size": 119,
+      "date": 133173616780941305
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/AS530_430_EMIS_PNG.png.DDS",
+      "size": 2796344,
+      "date": 133173616780931363
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/AS530_430_EMIS_PNG.png.DDS.json",
+      "size": 102,
+      "date": 133173616780931363
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/AS530_430_NORM_PNG.png.DDS",
+      "size": 5592560,
+      "date": 133173616780931363
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/AS530_430_NORM_PNG.png.DDS.json",
+      "size": 160,
+      "date": 133173616780931363
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/ATTITUDEINDICATOR_emis.png.DDS",
+      "size": 1398256,
+      "date": 133173616780971212
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/ATTITUDEINDICATOR_emis.png.DDS.json",
+      "size": 119,
+      "date": 133173616780971212
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/AUDIOPANEL_CESSNA_ALBD_PNG.png.DDS",
+      "size": 699192,
+      "date": 133173616781026435
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/AUDIOPANEL_CESSNA_ALBD_PNG.png.DDS.json",
+      "size": 102,
+      "date": 133173616781026435
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/AUDIOPANEL_CESSNA_DECALS_ALBD_PNG.png.DDS",
+      "size": 1398256,
+      "date": 133173616781006468
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/AUDIOPANEL_CESSNA_DECALS_ALBD_PNG.png.DDS.json",
+      "size": 119,
+      "date": 133173616781006468
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/AUDIOPANEL_CESSNA_DECALS_EMIS_PNG.png.DDS",
+      "size": 699192,
+      "date": 133173616780996203
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/AUDIOPANEL_CESSNA_DECALS_EMIS_PNG.png.DDS.json",
+      "size": 102,
+      "date": 133173616780996203
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/AUDIOPANEL_CESSNA_EMIS_PNG.png.DDS",
+      "size": 699192,
+      "date": 133173616781006468
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/AUDIOPANEL_CESSNA_EMIS_PNG.png.DDS.json",
+      "size": 102,
+      "date": 133173616781006468
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/AUDIOPANEL_CESSNA_NORM_PNG.png.DDS",
+      "size": 1398256,
+      "date": 133173616781016471
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/AUDIOPANEL_CESSNA_NORM_PNG.png.DDS.json",
+      "size": 160,
+      "date": 133173616781016471
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/auto_trim.png.DDS",
+      "size": 174904,
+      "date": 133173616782914544
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/auto_trim.png.DDS.json",
+      "size": 102,
+      "date": 133173616782914544
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/base.png.DDS",
+      "size": 1398256,
+      "date": 133173616780981156
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/base.png.DDS.json",
+      "size": 119,
+      "date": 133173616780981156
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/base_norm.png.DDS",
+      "size": 1398256,
+      "date": 133173616780981156
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/base_norm.png.DDS.json",
+      "size": 160,
+      "date": 133173616780981156
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/base_norm_png.png.DDS",
+      "size": 1398256,
+      "date": 133173616780971212
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/base_norm_png.png.DDS.json",
+      "size": 160,
+      "date": 133173616780971212
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/base_png.png.DDS",
+      "size": 1398256,
+      "date": 133173616780971212
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/base_png.png.DDS.json",
+      "size": 119,
+      "date": 133173616780971212
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/CABRI_G2_AIRFRAME_BLUR_BLADE_ALBD_PNG.png.DDS",
+      "size": 5592560,
+      "date": 133173616934193730
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/CABRI_G2_AIRFRAME_BLUR_BLADE_ALBD_PNG.png.DDS.json",
+      "size": 119,
+      "date": 133173616934193730
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/CABRI_G2_AIRFRAME_BLUR_BLADE_NORM_PNG.png.DDS",
+      "size": 1398256,
+      "date": 133173616934183858
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/CABRI_G2_AIRFRAME_BLUR_BLADE_NORM_PNG.png.DDS.json",
+      "size": 160,
+      "date": 133173616934183858
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/CABRI_G2_COCKPIT_DETAILS_ALBD_PNG.png.DDS",
+      "size": 2796344,
+      "date": 133173616783231427
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/CABRI_G2_COCKPIT_DETAILS_ALBD_PNG.png.DDS.json",
+      "size": 102,
+      "date": 133173616783231427
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/CABRI_G2_COCKPIT_DETAILS_NORM_PNG.png.DDS",
+      "size": 5592560,
+      "date": 133173616783221514
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/CABRI_G2_COCKPIT_DETAILS_NORM_PNG.png.DDS.json",
+      "size": 160,
+      "date": 133173616783221514
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/CABRI_G2_COCKPIT_PEDESTAL_ALBD_PNG.png.DDS",
+      "size": 2796344,
+      "date": 133173616783201492
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/CABRI_G2_COCKPIT_PEDESTAL_ALBD_PNG.png.DDS.json",
+      "size": 102,
+      "date": 133173616783201492
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/CABRI_G2_COCKPIT_PEDESTAL_NORM_PNG.png.DDS",
+      "size": 5592560,
+      "date": 133173616783176276
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/CABRI_G2_COCKPIT_PEDESTAL_NORM_PNG.png.DDS.json",
+      "size": 160,
+      "date": 133173616783176276
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/CDI_1_ALBD_PNG.png.DDS",
+      "size": 699192,
+      "date": 133173616781066300
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/CDI_1_ALBD_PNG.png.DDS.json",
+      "size": 102,
+      "date": 133173616781066300
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/CDI_1_ALBD_PNG_emis2.png.DDS",
+      "size": 699192,
+      "date": 133173616781036397
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/CDI_1_ALBD_PNG_emis2.png.DDS.json",
+      "size": 102,
+      "date": 133173616781036397
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/CDI_1_EMIS_PNG.png.DDS",
+      "size": 699192,
+      "date": 133173616781066300
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/CDI_1_EMIS_PNG.png.DDS.json",
+      "size": 102,
+      "date": 133173616781066300
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/CDI_1_NORM_PNG.png.DDS",
+      "size": 1398256,
+      "date": 133173616781056330
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/CDI_1_NORM_PNG.png.DDS.json",
+      "size": 160,
+      "date": 133173616781056330
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/CESSNA_152_COCKPIT_GAUGES_ALBD_PNG_png.png.DDS",
+      "size": 2796344,
+      "date": 133173616780755109
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/CESSNA_152_COCKPIT_GAUGES_ALBD_PNG_png.png.DDS.json",
+      "size": 102,
+      "date": 133173616780755109
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/CESSNA_152_COCKPIT_GAUGES_EMIS_PNG_png.png.DDS",
+      "size": 2796344,
+      "date": 133173616780755109
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/CESSNA_152_COCKPIT_GAUGES_EMIS_PNG_png.png.DDS.json",
+      "size": 102,
+      "date": 133173616780755109
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/clock_color.png.DDS",
+      "size": 5592560,
+      "date": 133173616780765069
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/clock_color.png.DDS.json",
+      "size": 119,
+      "date": 133173616780765069
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/clock_normal.png.DDS",
+      "size": 5592560,
+      "date": 133173616780775036
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/clock_normal.png.DDS.json",
+      "size": 160,
+      "date": 133173616780775036
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/clock_roughness.png.DDS",
+      "size": 2796344,
+      "date": 133173616780794998
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/clock_roughness.png.DDS.json",
+      "size": 166,
+      "date": 133173616780794998
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/clock_specular.png.DDS",
+      "size": 2796344,
+      "date": 133173616780800041
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/clock_specular.png.DDS.json",
+      "size": 102,
+      "date": 133173616780800041
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/control panel 2_Base_color.png.DDS",
+      "size": 2796344,
+      "date": 133173616780899893
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/control panel 2_Base_color.png.DDS.json",
+      "size": 102,
+      "date": 133173616780899893
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/control panel 2_Base_color_decal.png.DDS",
+      "size": 5592560,
+      "date": 133173616782964407
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/control panel 2_Base_color_decal.png.DDS.json",
+      "size": 119,
+      "date": 133173616782964407
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/control panel 2_Normal.png.DDS",
+      "size": 5592560,
+      "date": 133173616780874949
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/control panel 2_Normal.png.DDS.json",
+      "size": 160,
+      "date": 133173616780874949
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/control panel 2_Roughness-1.png.DDS",
+      "size": 2796344,
+      "date": 133173616780921361
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/control panel 2_Roughness-1.png.DDS.json",
+      "size": 166,
+      "date": 133173616780921361
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/control_panel 2_Base_emis_png.png.DDS",
+      "size": 2796344,
+      "date": 133173616782964407
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/control_panel 2_Base_emis_png.png.DDS.json",
+      "size": 102,
+      "date": 133173616782964407
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/covers_Base_color.png.DDS",
+      "size": 11184952,
+      "date": 133173616934618706
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/covers_Base_color.png.DDS.json",
+      "size": 102,
+      "date": 133173616934618706
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/covers_comp.png.DDS",
+      "size": 11184952,
+      "date": 133173616934608715
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/covers_comp.png.DDS.json",
+      "size": 166,
+      "date": 133173616934608715
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/covers_Normal_DirectX.png.DDS",
+      "size": 22369776,
+      "date": 133173616934563774
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/covers_Normal_DirectX.png.DDS.json",
+      "size": 160,
+      "date": 133173616934563774
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/FCP_PANELB_ALBD_png.png.DDS",
+      "size": 11184952,
+      "date": 133173616782904193
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/FCP_PANELB_ALBD_png.png.DDS.json",
+      "size": 102,
+      "date": 133173616782904193
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/FCP_PANELB_NORM_png.png.DDS",
+      "size": 22369776,
+      "date": 133173616782879016
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/FCP_PANELB_NORM_png.png.DDS.json",
+      "size": 160,
+      "date": 133173616782879016
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/FROST_DETAIL_NORM_PNG.png.DDS",
+      "size": 1398256,
+      "date": 133173616782297767
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/FROST_DETAIL_NORM_PNG.png.DDS.json",
+      "size": 160,
+      "date": 133173616782297767
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/gauges 07_Base_color.png.DDS",
+      "size": 2796344,
+      "date": 133173616782984331
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/gauges 07_Base_color.png.DDS.json",
+      "size": 102,
+      "date": 133173616782984331
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/gauges 07_Normal_DirectX.png.DDS",
+      "size": 5592560,
+      "date": 133173616782974370
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/gauges 07_Normal_DirectX.png.DDS.json",
+      "size": 160,
+      "date": 133173616782974370
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/gauges 08_Base_color.png.DDS",
+      "size": 699192,
+      "date": 133173616781722941
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/gauges 08_Base_color.png.DDS.json",
+      "size": 102,
+      "date": 133173616781722941
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/gauges 08_Emissive.png.DDS",
+      "size": 699192,
+      "date": 133173616781722941
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/gauges 08_Emissive.png.DDS.json",
+      "size": 102,
+      "date": 133173616781722941
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/gauges 08_Normal_DirectX.png.DDS",
+      "size": 1398256,
+      "date": 133173616781722941
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/gauges 08_Normal_DirectX.png.DDS.json",
+      "size": 160,
+      "date": 133173616781722941
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/gauges 09_Base_color.png.DDS",
+      "size": 699192,
+      "date": 133173616781700540
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/gauges 09_Base_color.png.DDS.json",
+      "size": 102,
+      "date": 133173616781700540
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/gauges 09_Emissive.png.DDS",
+      "size": 699192,
+      "date": 133173616781700540
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/gauges 09_Emissive.png.DDS.json",
+      "size": 102,
+      "date": 133173616781700540
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/gauges 09_Normal_DirectX.png.DDS",
+      "size": 1398256,
+      "date": 133173616781695452
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/gauges 09_Normal_DirectX.png.DDS.json",
+      "size": 160,
+      "date": 133173616781695452
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/gauges 10_Base_color.png.DDS",
+      "size": 699192,
+      "date": 133173616781346695
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/gauges 10_Base_color.png.DDS.json",
+      "size": 102,
+      "date": 133173616781346695
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/gauges 10_Normal_DirectX.png.DDS",
+      "size": 1398256,
+      "date": 133173616781346695
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/gauges 10_Normal_DirectX.png.DDS.json",
+      "size": 160,
+      "date": 133173616781346695
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/gauges 11_Base_color.png.DDS",
+      "size": 699192,
+      "date": 133173616781675527
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/gauges 11_Base_color.png.DDS.json",
+      "size": 102,
+      "date": 133173616781675527
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/gauges 11_Emissive.png.DDS",
+      "size": 699192,
+      "date": 133173616781675527
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/gauges 11_Emissive.png.DDS.json",
+      "size": 102,
+      "date": 133173616781675527
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/gauges 11_Normal_DirectX.png.DDS",
+      "size": 1398256,
+      "date": 133173616781665561
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/gauges 11_Normal_DirectX.png.DDS.json",
+      "size": 160,
+      "date": 133173616781665561
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/gauges 12_Base_color.png.DDS",
+      "size": 699192,
+      "date": 133173616781748649
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/gauges 12_Base_color.png.DDS.json",
+      "size": 102,
+      "date": 133173616781748649
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/gauges 13_Base_color.png.DDS",
+      "size": 699192,
+      "date": 133173616782994300
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/gauges 13_Base_color.png.DDS.json",
+      "size": 102,
+      "date": 133173616782994300
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/gauges_01_gauges_BaseColor.png.DDS",
+      "size": 5592560,
+      "date": 133173616781086232
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/gauges_01_gauges_BaseColor.png.DDS.json",
+      "size": 119,
+      "date": 133173616781086232
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/gauges_01_gauges_Normal.png.DDS",
+      "size": 5592560,
+      "date": 133173616781076266
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/gauges_01_gauges_Normal.png.DDS.json",
+      "size": 160,
+      "date": 133173616781076266
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/gauges_02_Base_color.png.DDS",
+      "size": 2796344,
+      "date": 133173616779774814
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/gauges_02_Base_color.png.DDS.json",
+      "size": 102,
+      "date": 133173616779774814
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/gauges_02_Base_color_emis.png.DDS",
+      "size": 2796344,
+      "date": 133173616779754888
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/gauges_02_Base_color_emis.png.DDS.json",
+      "size": 102,
+      "date": 133173616779754888
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/gauges_02_Normal.png.DDS",
+      "size": 5592560,
+      "date": 133173616779764871
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/gauges_02_Normal.png.DDS.json",
+      "size": 160,
+      "date": 133173616779764871
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/gauges_03_Base_color.png.DDS",
+      "size": 2796344,
+      "date": 133173616934734805
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/gauges_03_Base_color.png.DDS.json",
+      "size": 102,
+      "date": 133173616934734805
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/gauges_03_Normal.png.DDS",
+      "size": 5592560,
+      "date": 133173616934713800
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/gauges_03_Normal.png.DDS.json",
+      "size": 160,
+      "date": 133173616934713800
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/gauges_03_Roughness.png.DDS",
+      "size": 2796344,
+      "date": 133173616934724754
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/gauges_03_Roughness.png.DDS.json",
+      "size": 166,
+      "date": 133173616934724754
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/GLASS_DETAILMAP02_MASK_PNG_png.png.DDS",
+      "size": 5592560,
+      "date": 133173616782292739
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/GLASS_DETAILMAP02_MASK_PNG_png.png.DDS.json",
+      "size": 119,
+      "date": 133173616782292739
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/Heli_Body_01_Diffuse-1.png.DDS",
+      "size": 11184952,
+      "date": 133173616934093914
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/Heli_Body_01_Diffuse-1.png.DDS.json",
+      "size": 102,
+      "date": 133173616934093914
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/Heli_Body_01_Metalness.png.DDS",
+      "size": 11184952,
+      "date": 133173616934153883
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/Heli_Body_01_Metalness.png.DDS.json",
+      "size": 166,
+      "date": 133173616934153883
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/Heli_Body_01_Normal.png.DDS",
+      "size": 22369776,
+      "date": 133173616934114008
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/Heli_Body_01_Normal.png.DDS.json",
+      "size": 160,
+      "date": 133173616934114008
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/Heli_Body_01_Normal_png.png.DDS",
+      "size": 22369776,
+      "date": 133173616933904308
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/Heli_Body_01_Normal_png.png.DDS.json",
+      "size": 160,
+      "date": 133173616933904308
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/Heli_Body_02_Normal_png.png.DDS",
+      "size": 22369776,
+      "date": 133173616933964103
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/Heli_Body_02_Normal_png.png.DDS.json",
+      "size": 160,
+      "date": 133173616933964103
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/Heli_InteriorP01_Diffuse.png.DDS",
+      "size": 11184952,
+      "date": 133173616781555006
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/Heli_InteriorP01_Diffuse.png.DDS.json",
+      "size": 102,
+      "date": 133173616781555006
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/Heli_InteriorP01_Diffuse_png.png.DDS",
+      "size": 11184952,
+      "date": 133173616782282776
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/Heli_InteriorP01_Diffuse_png.png.DDS.json",
+      "size": 102,
+      "date": 133173616782282776
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/Heli_InteriorP01_Normal_png.png.DDS",
+      "size": 22369776,
+      "date": 133173616781391611
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/Heli_InteriorP01_Normal_png.png.DDS.json",
+      "size": 160,
+      "date": 133173616781391611
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/Heli_InteriorP01_Roughness.png.DDS",
+      "size": 11184952,
+      "date": 133173616781456117
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/Heli_InteriorP01_Roughness.png.DDS.json",
+      "size": 166,
+      "date": 133173616781456117
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/Heli_InteriorP02_Diffuse.png.DDS",
+      "size": 11184952,
+      "date": 133173616782492583
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/Heli_InteriorP02_Diffuse.png.DDS.json",
+      "size": 102,
+      "date": 133173616782492583
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/Heli_InteriorP02_Normal.png.DDS",
+      "size": 22369776,
+      "date": 133173616782432715
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/Heli_InteriorP02_Normal.png.DDS.json",
+      "size": 160,
+      "date": 133173616782432715
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/Heli_InteriorP03_Diffuse.png.DDS",
+      "size": 11184952,
+      "date": 133173616780370491
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/Heli_InteriorP03_Diffuse.png.DDS.json",
+      "size": 102,
+      "date": 133173616780370491
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/HELI_INTERIORP03_DIFFUSE_PNG.png.DDS",
+      "size": 11184952,
+      "date": 133173616782181943
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/HELI_INTERIORP03_DIFFUSE_PNG.png.DDS.json",
+      "size": 102,
+      "date": 133173616782181943
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/Heli_InteriorP03_Normal.png.DDS",
+      "size": 22369776,
+      "date": 133173616780275709
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/Heli_InteriorP03_Normal.png.DDS.json",
+      "size": 160,
+      "date": 133173616780275709
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/HELI_INTERIORP03_NORMAL_PNG.png.DDS",
+      "size": 22369776,
+      "date": 133173616782140529
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/HELI_INTERIORP03_NORMAL_PNG.png.DDS.json",
+      "size": 160,
+      "date": 133173616782140529
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/Heli_InteriorP03_Roughness.png.DDS",
+      "size": 11184952,
+      "date": 133173616780320677
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/Heli_InteriorP03_Roughness.png.DDS.json",
+      "size": 166,
+      "date": 133173616780320677
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/HELI_INTERIORP03_ROUGHNESS_PNG.png.DDS",
+      "size": 11184952,
+      "date": 133173616781276731
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/HELI_INTERIORP03_ROUGHNESS_PNG.png.DDS.json",
+      "size": 166,
+      "date": 133173616781276731
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/Heli_InteriorP04_Diffuse.png.DDS",
+      "size": 11184952,
+      "date": 133173616782603605
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/Heli_InteriorP04_Diffuse.png.DDS.json",
+      "size": 102,
+      "date": 133173616782603605
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/Heli_InteriorP04_Diffuse_png.png.DDS",
+      "size": 11184952,
+      "date": 133173616782653502
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/Heli_InteriorP04_Diffuse_png.png.DDS.json",
+      "size": 102,
+      "date": 133173616782653502
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/Heli_InteriorP04_Normal.png.DDS",
+      "size": 22369776,
+      "date": 133173616782527555
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/Heli_InteriorP04_Normal.png.DDS.json",
+      "size": 160,
+      "date": 133173616782527555
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/Heli_InteriorP04_Normal_png.png.DDS",
+      "size": 22369776,
+      "date": 133173616782633564
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/Heli_InteriorP04_Normal_png.png.DDS.json",
+      "size": 160,
+      "date": 133173616782633564
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/Heli_Rotor_01_Diffuse.png.DDS",
+      "size": 11184952,
+      "date": 133173616934078879
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/Heli_Rotor_01_Diffuse.png.DDS.json",
+      "size": 102,
+      "date": 133173616934078879
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/Heli_Rotor_01_Diffuse_png.png.DDS",
+      "size": 11184952,
+      "date": 133173616934703786
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/Heli_Rotor_01_Diffuse_png.png.DDS.json",
+      "size": 102,
+      "date": 133173616934703786
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/Heli_Rotor_01_Rougness.png.DDS",
+      "size": 11184952,
+      "date": 133173616934039014
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/Heli_Rotor_01_Rougness.png.DDS.json",
+      "size": 166,
+      "date": 133173616934039014
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/Heli_Rotor_01_Rougness_png.png.DDS",
+      "size": 11184952,
+      "date": 133173616934668570
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/Heli_Rotor_01_Rougness_png.png.DDS.json",
+      "size": 166,
+      "date": 133173616934668570
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/Inn.png.DDS",
+      "size": 5592560,
+      "date": 133173616782999379
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/Inn.png.DDS.json",
+      "size": 119,
+      "date": 133173616782999379
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/Inn_emis.png.DDS",
+      "size": 5592560,
+      "date": 133173616781644428
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/Inn_emis.png.DDS.json",
+      "size": 119,
+      "date": 133173616781644428
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/Inn_png.png.DDS",
+      "size": 5592560,
+      "date": 133173616781655587
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/Inn_png.png.DDS.json",
+      "size": 119,
+      "date": 133173616781655587
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/letters.png.DDS",
+      "size": 1398256,
+      "date": 133173616781758607
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/letters.png.DDS.json",
+      "size": 119,
+      "date": 133173616781758607
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/letters_EMIS_PNG.png.DDS",
+      "size": 699192,
+      "date": 133173616781748649
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/letters_EMIS_PNG.png.DDS.json",
+      "size": 102,
+      "date": 133173616781748649
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/LIGHTS_ALBD_PNG.png.DDS",
+      "size": 2796344,
+      "date": 133173616934183858
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/LIGHTS_ALBD_PNG.png.DDS.json",
+      "size": 102,
+      "date": 133173616934183858
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/low_Base_color_decal.png.DDS",
+      "size": 5592560,
+      "date": 133173616782974370
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/low_Base_color_decal.png.DDS.json",
+      "size": 119,
+      "date": 133173616782974370
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/low_Base_color_png.png.DDS",
+      "size": 2796344,
+      "date": 133173616782698388
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/low_Base_color_png.png.DDS.json",
+      "size": 102,
+      "date": 133173616782698388
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/low_Emissive_png.png.DDS",
+      "size": 2796344,
+      "date": 133173616782974370
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/low_Emissive_png.png.DDS.json",
+      "size": 102,
+      "date": 133173616782974370
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/low_Normal_OpenGL.png.DDS",
+      "size": 5592560,
+      "date": 133173616782683402
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/low_Normal_OpenGL.png.DDS.json",
+      "size": 160,
+      "date": 133173616782683402
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/MAGNETICCOMP.png.DDS",
+      "size": 174992,
+      "date": 133173616782342526
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/MAGNETICCOMP.png.DDS.json",
+      "size": 119,
+      "date": 133173616782342526
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/MAGNETICCOMP_emis.png.DDS",
+      "size": 174992,
+      "date": 133173616782342526
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/MAGNETICCOMP_emis.png.DDS.json",
+      "size": 119,
+      "date": 133173616782342526
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/MAGNETICCOMP_emis_png.png.DDS",
+      "size": 174992,
+      "date": 133173616782327707
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/MAGNETICCOMP_emis_png.png.DDS.json",
+      "size": 119,
+      "date": 133173616782327707
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/MAGNETICCOMP_png.png.DDS",
+      "size": 174992,
+      "date": 133173616782327707
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/MAGNETICCOMP_png.png.DDS.json",
+      "size": 119,
+      "date": 133173616782327707
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/mid_Base_color.png.DDS",
+      "size": 2796344,
+      "date": 133173616782954438
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/mid_Base_color.png.DDS.json",
+      "size": 102,
+      "date": 133173616782954438
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/mid_Base_color_decal.png.DDS",
+      "size": 5592560,
+      "date": 133173616782964407
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/mid_Base_color_decal.png.DDS.json",
+      "size": 119,
+      "date": 133173616782964407
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/mid_Emissive.png.DDS",
+      "size": 2796344,
+      "date": 133173616782964407
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/mid_Emissive.png.DDS.json",
+      "size": 102,
+      "date": 133173616782964407
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/mid_Normal_OpenGL_png.png.DDS",
+      "size": 5592560,
+      "date": 133173616782944625
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/mid_Normal_OpenGL_png.png.DDS.json",
+      "size": 160,
+      "date": 133173616782944625
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/panel_Base_color_png_decal.png.DDS",
+      "size": 5592560,
+      "date": 133173616782964407
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/panel_Base_color_png_decal.png.DDS.json",
+      "size": 119,
+      "date": 133173616782964407
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/panel_Base_color_png_decal_png.png.DDS",
+      "size": 2796344,
+      "date": 133173616780235860
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/panel_Base_color_png_decal_png.png.DDS.json",
+      "size": 102,
+      "date": 133173616780235860
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/panel_Emissive_png.png.DDS",
+      "size": 2796344,
+      "date": 133173616780205944
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/panel_Emissive_png.png.DDS.json",
+      "size": 102,
+      "date": 133173616780205944
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/panel_Normalpng.png.DDS",
+      "size": 5592560,
+      "date": 133173616780215899
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/panel_Normalpng.png.DDS.json",
+      "size": 160,
+      "date": 133173616780215899
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/prop2_blurred_png.png.DDS",
+      "size": 2766352,
+      "date": 133173616934734805
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/prop2_blurred_png.png.DDS.json",
+      "size": 119,
+      "date": 133173616934734805
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/prop2_slow_png.png.DDS",
+      "size": 2766352,
+      "date": 133173616934747522
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/prop2_slow_png.png.DDS.json",
+      "size": 119,
+      "date": 133173616934747522
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/swirch_and_bottons_Base_color.png.DDS",
+      "size": 11184952,
+      "date": 133173616780205944
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/swirch_and_bottons_Base_color.png.DDS.json",
+      "size": 102,
+      "date": 133173616780205944
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/swirch_and_bottons_Base_color_png.png.DDS",
+      "size": 11184952,
+      "date": 133173616780715238
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/swirch_and_bottons_Base_color_png.png.DDS.json",
+      "size": 102,
+      "date": 133173616780715238
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/swirch_and_bottons_Emissive.png.DDS",
+      "size": 11184952,
+      "date": 133173616779774814
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/swirch_and_bottons_Emissive.png.DDS.json",
+      "size": 102,
+      "date": 133173616779774814
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/swirch_and_bottons_Emissive_png.png.DDS",
+      "size": 11184952,
+      "date": 133173616780370491
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/swirch_and_bottons_Emissive_png.png.DDS.json",
+      "size": 102,
+      "date": 133173616780370491
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/swirch_and_bottons_Normal_OpenGL.png.DDS",
+      "size": 22369776,
+      "date": 133173616780165702
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/swirch_and_bottons_Normal_OpenGL.png.DDS.json",
+      "size": 160,
+      "date": 133173616780165702
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/swirch_and_bottons_Normal_OpenGL_png.png.DDS",
+      "size": 22369776,
+      "date": 133173616780670034
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/swirch_and_bottons_Normal_OpenGL_png.png.DDS.json",
+      "size": 160,
+      "date": 133173616780670034
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/SWITCH BOX_SWITCH BOX_BASECOLOR_PNG.png.DDS",
+      "size": 5592560,
+      "date": 133173616781167026
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/SWITCH BOX_SWITCH BOX_BASECOLOR_PNG.png.DDS.json",
+      "size": 119,
+      "date": 133173616781167026
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/SWITCH BOX_SWITCH BOX_EMISSIVE_PNG.png.DDS",
+      "size": 2796344,
+      "date": 133173616781137122
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/SWITCH BOX_SWITCH BOX_EMISSIVE_PNG.png.DDS.json",
+      "size": 102,
+      "date": 133173616781137122
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/SWITCH BOX_SWITCH BOX_NORMAL_PNG.png.DDS",
+      "size": 5592560,
+      "date": 133173616781157109
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/SWITCH BOX_SWITCH BOX_NORMAL_PNG.png.DDS.json",
+      "size": 160,
+      "date": 133173616781157109
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/T_Tablet_Body_ALB.png.DDS",
+      "size": 22369776,
+      "date": 133173616783156338
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/T_Tablet_Body_ALB.png.DDS.json",
+      "size": 119,
+      "date": 133173616783156338
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/T_Tablet_Body_N.png.DDS",
+      "size": 22369776,
+      "date": 133173616783094076
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/T_Tablet_Body_N.png.DDS.json",
+      "size": 160,
+      "date": 133173616783094076
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/T_Tablet_Screen_N.png.DDS",
+      "size": 22369776,
+      "date": 133173616783014376
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/T_Tablet_Screen_N.png.DDS.json",
+      "size": 160,
+      "date": 133173616783014376
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/T_Tablet_Screen_Roughness.png.DDS",
+      "size": 11184952,
+      "date": 133173616783044246
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/T_Tablet_Screen_Roughness.png.DDS.json",
+      "size": 166,
+      "date": 133173616783044246
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/tablet_comp.png.DDS",
+      "size": 11184952,
+      "date": 133173616783126465
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/tablet_comp.png.DDS.json",
+      "size": 166,
+      "date": 133173616783126465
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/throttle_HeliGazelle_Interior_P03_002_ALBD.png.DDS",
+      "size": 699192,
+      "date": 133173616781202471
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/throttle_HeliGazelle_Interior_P03_002_ALBD.png.DDS.json",
+      "size": 102,
+      "date": 133173616781202471
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/throttle_HeliGazelle_Interior_P03_002_COMP.png.DDS",
+      "size": 699192,
+      "date": 133173616781192104
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/throttle_HeliGazelle_Interior_P03_002_COMP.png.DDS.json",
+      "size": 166,
+      "date": 133173616781192104
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/throttle_HeliGazelle_Interior_P03_002_NORM.png.DDS",
+      "size": 1398256,
+      "date": 133173616781192104
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/throttle_HeliGazelle_Interior_P03_002_NORM.png.DDS.json",
+      "size": 160,
+      "date": 133173616781192104
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/top_Base_color.png.DDS",
+      "size": 11184952,
+      "date": 133173616782099239
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/top_Base_color.png.DDS.json",
+      "size": 102,
+      "date": 133173616782099239
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/top_Base_color_decal.png.DDS",
+      "size": 22369776,
+      "date": 133173616782109229
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/top_Base_color_decal.png.DDS.json",
+      "size": 119,
+      "date": 133173616782109229
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/top_Emissive.png.DDS",
+      "size": 11184952,
+      "date": 133173616781802830
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/top_Emissive.png.DDS.json",
+      "size": 102,
+      "date": 133173616781802830
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/top_Normal_OpenGL.png.DDS",
+      "size": 22369776,
+      "date": 133173616782034380
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/top_Normal_OpenGL.png.DDS.json",
+      "size": 160,
+      "date": 133173616782034380
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/torque_chart.png.DDS",
+      "size": 1109984,
+      "date": 133173616780235860
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/torque_chart.png.DDS.json",
+      "size": 119,
+      "date": 133173616780235860
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/TRANSPONDER_AS76_SCREEN_ALBD_TIF.png.DDS",
+      "size": 43848,
+      "date": 133173616781611034
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/TRANSPONDER_AS76_SCREEN_ALBD_TIF.png.DDS.json",
+      "size": 102,
+      "date": 133173616781611034
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/TRANSPONDER_AS76_SCREEN_EMIS_TIF.png.DDS",
+      "size": 43848,
+      "date": 133173616781611034
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/TRANSPONDER_AS76_SCREEN_EMIS_TIF.png.DDS.json",
+      "size": 102,
+      "date": 133173616781611034
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/turn_base_png.png.DDS",
+      "size": 2796344,
+      "date": 133173616782327707
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/turn_base_png.png.DDS.json",
+      "size": 102,
+      "date": 133173616782327707
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/turn_norm.png.DDS",
+      "size": 5592560,
+      "date": 133173616782317744
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/turn_norm.png.DDS.json",
+      "size": 160,
+      "date": 133173616782317744
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/turnindication_decal_png.png.DDS",
+      "size": 1398256,
+      "date": 133173616782342526
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/turnindication_decal_png.png.DDS.json",
+      "size": 119,
+      "date": 133173616782342526
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/VERTICALSPEED_DR400_ALBD_PNG.png.DDS",
+      "size": 699192,
+      "date": 133173616781624453
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/VERTICALSPEED_DR400_ALBD_PNG.png.DDS.json",
+      "size": 102,
+      "date": 133173616781624453
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/WARNINGLIGHTS_ALBD_PNG_png.png.DDS",
+      "size": 87528,
+      "date": 133173616780864958
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/WARNINGLIGHTS_ALBD_PNG_png.png.DDS.json",
+      "size": 102,
+      "date": 133173616780864958
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/WARNINGLIGHTS_COMP_PNG_png.png.DDS",
+      "size": 21992,
+      "date": 133173616780864958
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/WARNINGLIGHTS_COMP_PNG_png.png.DDS.json",
+      "size": 166,
+      "date": 133173616780864958
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/WARNINGLIGHTS_EMIS_PNG_png.png.DDS",
+      "size": 87528,
+      "date": 133173616780855011
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/WARNINGLIGHTS_EMIS_PNG_png.png.DDS.json",
+      "size": 102,
+      "date": 133173616780855011
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/WARNINGLIGHTS_NORM_PNG_png.png.DDS",
+      "size": 43856,
+      "date": 133173616780864958
+    },
+    {
+      "path": "SimObjects/Airplanes/fcp_gazelle_sa_342_Aircraft/texture/WARNINGLIGHTS_NORM_PNG_png.png.DDS.json",
+      "size": 160,
+      "date": 133173616780864958
+    }
+  ]
+}

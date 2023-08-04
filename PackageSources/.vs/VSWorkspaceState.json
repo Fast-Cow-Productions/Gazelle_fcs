@@ -1,0 +1,17 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\html_ui",
+    "\\html_ui\\Pages",
+    "\\html_ui\\Pages\\VCockpit",
+    "\\html_ui\\Pages\\VCockpit\\Instruments",
+    "\\html_ui\\Pages\\VCockpit\\Instruments\\fcp_gazelle",
+    "\\html_ui\\Pages\\VCockpit\\Instruments\\fcp_gazelle\\efb_tablet",
+    "\\SimObjects",
+    "\\SimObjects\\Airplanes",
+    "\\SimObjects\\Airplanes\\fcp_gazelle_sa_342_Aircraft",
+    "\\SimObjects\\Airplanes\\fcp_gazelle_sa_342_Aircraft\\model"
+  ],
+  "SelectedNode": "\\SimObjects\\Airplanes\\fcp_gazelle_sa_342_Aircraft\\engines.cfg",
+  "PreviewInSolutionExplorer": false
+}

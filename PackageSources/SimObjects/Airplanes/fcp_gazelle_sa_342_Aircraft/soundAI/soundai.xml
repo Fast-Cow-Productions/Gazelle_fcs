@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright (c) Asobo Studio, All rights reserved. www.asobostudio.com -->
+
+<SoundInfo Version="0.1">
+
+	<WwisePackages>
+		<MainPackage Name="NemethDesigns_B407_AI"/>
+	</WwisePackages>
+
+  <AlwaysPlaySounds>
+
+	<Sound WwiseData="true" WwiseEvent="rotor1_move">
+		<WwiseRTPC SimVar="ROTOR RPM" Units="RPM" Index="" RTPCName="SIMVAR_ROTOR_RPM" />
+		<WwiseRTPC SimVar="ROTOR RPM" Units="RPM" Index="2" RTPCName="SIMVAR_ROTOR2_RPM" />
+    </Sound>  
+
+
+  </AlwaysPlaySounds>
+  
+  <EngineSoundPresets>
+  
+    <Sound WwiseEvent="Combustion" ConeHeading="180" RPMMin="247" WwiseData="true" EngineIndex="1" FadeOutType="2" FadeOutTime="5">
+		<WwiseRTPC SimVar="ROTOR RPM" Units="RPM" Index="2" RTPCName="SIMVAR_ROTOR2_RPM" />
+ 	</Sound>
+
+	<!-- <Sound WwiseEvent="JetWhine" ConeHeading="0" WwiseData="true" EngineIndex="1" RPMMin="1" FadeOutType="2" FadeOutTime="5"> -->
+		<!-- <WwiseRTPC SimVar="GENERAL ENG COMBUSTION" Units="BOOL" Index="1" RTPCName="SIMVAR_GENERAL_ENG_COMBUSTION_A01_R4"/> -->
+		<!-- <WwiseRTPC SimVar="TURB ENG N1" Units="PERCENT" Index="1" RTPCName="SIMVAR_TURB_ENG_N1" RTPCAttackTime="0.3" RTPCReleaseTime="0.3"/> -->
+		<!-- <WwiseRTPC SimVar="TURB ENG N2" Units="PERCENT" Index="1" RTPCName="SIMVAR_TURB_ENG_N2" RTPCAttackTime="0.3" RTPCReleaseTime="0.3"/> -->
+		<!-- <WwiseRTPC SimVar="ROTOR RPM" Units="RPM" Index="2" RTPCName="SIMVAR_ROTOR2_RPM" /> -->
+	<!-- </Sound> -->
+
+	<!-- MAIN ROTOR ###################################################################################################################-->     
+	<Sound WwiseEvent="Rotor" FadeOutType="2" FadeOutTime="2" WwiseData="true" RPMMin="247" RotorIndex="1" EngineIndex="1"  >
+		<WwiseRTPC SimVar="ROTOR COLLECTIVE BLADE PITCH PCT" Units="PERCENT" Index="1" RTPCName="SIMVAR_ROTOR_COLLECTIVE_BLADE_PITCH_PCT" RTPCAttackTime="0.5" RTPCReleaseTime="0.5"/>
+		<WwiseRTPC SimVar="ROTOR RPM" Units="RPM" Index="2" RTPCName="SIMVAR_ROTOR2_RPM" />
+	</Sound>	
+
+
+	<Sound WwiseEvent="Shutdown" FadeOutType="2" FadeOutTime="1" WwiseData="true" RPMMin="247" RotorIndex="1" EngineIndex="1"  >
+		<WwiseRTPC SimVar="ROTOR COLLECTIVE BLADE PITCH PCT" Units="PERCENT" Index="1" RTPCName="SIMVAR_ROTOR_COLLECTIVE_BLADE_PITCH_PCT" RTPCAttackTime="0.5" RTPCReleaseTime="0.5"/>
+		<WwiseRTPC SimVar="ROTOR RPM" Units="RPM" Index="1" RTPCName="SIMVAR_ROTOR_RPM" />
+	</Sound>	
+
+	
+	<!-- TAIL ROTOR ###################################################################################################################-->     
+	<Sound WwiseEvent="Rotor" ConeHeading="90" FadeOutType="2" FadeOutTime="1" WwiseData="true" RPMMin="1500" RotorIndex="2" EngineIndex="1"  >
+      <WwiseRTPC SimVar="TAIL ROTOR PEDAL POSITION" Units="PERCENT" Index="0" RTPCName="SIMVAR_TAIL_ROTOR_PEDAL_POSITION" RTPCAttackTime="1" RTPCReleaseTime="1"/>
+	</Sound>
+	
+	<!-- SHUTDOWN TAIL ROTOR ###################################################################################################################-->     
+    <Sound WwiseEvent="Shutdown" ConeHeading="90" RPMMin="1500" WwiseData="true" RotorIndex="2" EngineIndex="1" >   
+		<WwiseRTPC SimVar="ROTOR RPM" Units="RPM" Index="1" RTPCName="SIMVAR_ROTOR_RPM" />	
+    </Sound> 
+		
+  </EngineSoundPresets>
+  
+  
+  <SimVarSounds>	
+  
+   	<Sound WwiseEvent="rotor1_combustion_start" SimVar="GENERAL ENG STARTER ACTIVE" Continuous="false" ConeHeading="0" Units="BOOLEAN" FadeOutType="2" FadeOutTime="70" WwiseData="true" Index="1">
+		<WwiseRTPC SimVar="ROTOR RPM" Units="RPM" Index="2" RTPCName="SIMVAR_ROTOR2_RPM" />
+		<Range LowerBound="1" />	
+		<Requires SimVar="TURB ENG N1" Units="PERCENT" Index="1">
+			<Range LowerBound="0.1" UpperBound="80" />
+		</Requires>		
+	</Sound>     
+	
+	<Sound WwiseEvent="rotor2_combustion_start" SimVar="GENERAL ENG STARTER ACTIVE" Continuous="false" NodeName="SK_ROTOR_TAIl_AXLE" ConeHeading="-90" Units="BOOLEAN" FadeOutType="2" FadeOutTime="70" WwiseData="true" Index="1">
+		<WwiseRTPC SimVar="ROTOR RPM" Units="RPM" Index="2" RTPCName="SIMVAR_ROTOR2_RPM" />
+		<Range LowerBound="1" />	
+		<Requires SimVar="TURB ENG N1" Units="PERCENT" Index="1">
+			<Range LowerBound="0.1" UpperBound="80" />
+		</Requires>		
+	</Sound>    
+	
+	<!-- PROPELLER WIND ========================================================================================== --> 
+	
+	<Sound WwiseData="true" WwiseEvent="rotor_wind" ConePitch="90" SimVar="GENERAL ENG RPM" Units="RPM" ViewPoint="Outside" Index="1" NodeName="SK_ROTOR_MAIN_AXLE"  >  
+	   <Range LowerBound="1"/>
+	   <WwiseRTPC SimVar="ROTOR RPM" Units="RPM" Index="2" RTPCName="SIMVAR_ROTOR2_RPM" />
+	   <WwiseRTPC SimVar="ROTOR COLLECTIVE BLADE PITCH PCT" Units="PERCENT" Index="1" RTPCName="SIMVAR_ROTOR_COLLECTIVE_BLADE_PITCH_PCT" RTPCAttackTime="0.5" RTPCReleaseTime="0.5"/>  
+       <WwiseRTPC SimVar="PLANE ALT ABOVE GROUND MINUS CG" Units="METERS" Index="1"  RTPCName="SIMVAR_PLANE_ALT_ABOVE_GROUND_MINUS_CG" />
+    </Sound>  
+  </SimVarSounds>
+  
+</SoundInfo>

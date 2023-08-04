@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AssetPackage Version="3.1.10">
+	<ItemSettings>
+		<ContentType>AIRCRAFT</ContentType>
+		<Title>Gazelle Aircraft</Title>
+		<Manufacturer>Aerospatiale</Manufacturer>
+		<Creator>Fast Cow Productions</Creator>
+	</ItemSettings>
+	<Flags>
+		<VisibleInStore>true</VisibleInStore>
+		<CanBeReferenced>true</CanBeReferenced>
+	</Flags>
+	<MarketplaceData>
+		<AssetDir>PackageDefinitions\fcp-gazelle-sa-342\MarketplaceData\</AssetDir>
+		<OutputDir>MarketplaceData\fcp-gazelle-sa-342\</OutputDir>
+	</MarketplaceData>
+	<AssetGroups>
+		<AssetGroup Name="ContentInfo">
+			<Type>ContentInfo</Type>
+			<Flags>
+				<FSXCompatibility>false</FSXCompatibility>
+			</Flags>
+			<AssetDir>PackageDefinitions\fcp-gazelle-sa-342\ContentInfo\</AssetDir>
+			<OutputDir>ContentInfo\fcp-gazelle-sa-342\</OutputDir>
+		</AssetGroup>
+		<AssetGroup Name="fcp_gazelle_sa_342_Aircraft">
+			<Type>SimObject</Type>
+			<Flags>
+				<FSXCompatibility>false</FSXCompatibility>
+			</Flags>
+			<AssetDir>PackageSources\SimObjects\Airplanes\fcp_gazelle_sa_342_Aircraft\</AssetDir>
+			<OutputDir>SimObjects\Airplanes\fcp_gazelle_sa_342_Aircraft\</OutputDir>
+		</AssetGroup>
+		<AssetGroup Name="fcp_gazelle_sa_342_Aircraft_Data">
+			<Type>Copy</Type>
+			<Flags>
+				<FSXCompatibility>false</FSXCompatibility>
+			</Flags>
+			<AssetDir>PackageSources\Data\</AssetDir>
+			<OutputDir>Data\</OutputDir>
+		</AssetGroup>
+		<AssetGroup Name="fcp_gazelle_sa_342_Aircraft_effects">
+			<Type>Copy</Type>
+			<Flags>
+				<FSXCompatibility>false</FSXCompatibility>
+			</Flags>
+			<AssetDir>PackageSources\effects\</AssetDir>
+			<OutputDir>effects\</OutputDir>
+		</AssetGroup>
+	</AssetGroups>
+</AssetPackage>
+
